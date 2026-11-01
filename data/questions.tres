@@ -1,0 +1,603 @@
+[gd_resource type="Resource" script_class="QuestionBank" load_steps=78 format=3]
+
+[ext_resource type="Script" path="res://scripts/question.gd" id="1_4xh8m"]
+[ext_resource type="Script" path="res://scripts/question_bank.gd" id="2_gtctc"]
+
+[sub_resource type="Resource" id="Resource_xxaah"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Rare Words"
+points = 100
+question = "Which word refers to the symbol & (which represents the word \"and\")?"
+answer = "Ampersand"
+
+[sub_resource type="Resource" id="Resource_gu8wy"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Rare Words"
+points = 200
+question = "Which of these word means \"to throw a person out of a window\""
+answer = "Defenestrate"
+
+[sub_resource type="Resource" id="Resource_61q0c"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Rare Words"
+points = 300
+question = "Which word describes the small plastic or metal tube on the end of a shoelace?"
+answer = "Aglet"
+
+[sub_resource type="Resource" id="Resource_kw6ve"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Rare Words"
+points = 400
+question = "Which word refers to the indentation above your upper lip and below your nose?"
+answer = "Philtrum"
+
+[sub_resource type="Resource" id="Resource_cskf0"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Rare Words"
+points = 500
+question = "Which word refers to the pleasant, earthy smell that accompanies the first rain after a long period of warm, dry weather?"
+answer = "Petrichor"
+
+[sub_resource type="Resource" id="Resource_h2hor"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Historic Years"
+points = 100
+question = "What year did Singapore gain independence?"
+answer = "1965"
+
+[sub_resource type="Resource" id="Resource_ceycr"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Historic Years"
+points = 200
+question = "In what year did humans first land on the Moon?"
+answer = "1969"
+
+[sub_resource type="Resource" id="Resource_3ysqi"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Historic Years"
+points = 300
+question = "In what year did the Berlin Wall fall?"
+answer = "1989"
+
+[sub_resource type="Resource" id="Resource_o7wmi"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Historic Years"
+points = 400
+question = "In what year did the Titanic sink?"
+answer = "1912"
+
+[sub_resource type="Resource" id="Resource_io5pn"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Historic Years"
+points = 500
+question = "In what year did the Magna Carta get sealed?"
+answer = "1215"
+
+[sub_resource type="Resource" id="Resource_ql4fa"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Household Items"
+points = 100
+question = "What chocolate drink comes in a tin with a green label?"
+answer = "Milo"
+
+[sub_resource type="Resource" id="Resource_bpbwg"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Household Items"
+points = 200
+question = "What animal is on the side of the small hexagonal jar of herbal ointment?"
+answer = "Tiger (Tiger Balm)"
+
+[sub_resource type="Resource" id="Resource_mdbur"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Household Items"
+points = 300
+question = "What bilingual greeting is printed in red on the classic white cotton face towel bordered by thin blue lines?"
+answer = "Good Morning/祝君早安"
+
+[sub_resource type="Resource" id="Resource_i05ic"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Household Items"
+points = 400
+question = "What brand is the round tin of Danish butter cookies is famously used to store sewing needles and thread?"
+answer = "Royal Dansk"
+
+[sub_resource type="Resource" id="Resource_86o3g"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Household Items"
+points = 500
+question = "What shatterproof material is used to make the plates and bowls found in almost every hawker centre?"
+answer = "Melamine"
+
+[sub_resource type="Resource" id="Resource_jloa8"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "SG Landmarks"
+points = 100
+question = "Which Singapore statue is half lion and half fish?"
+answer = "Merlion"
+
+[sub_resource type="Resource" id="Resource_la1jb"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "SG Landmarks"
+points = 200
+question = "Which Singapore airport was named the world's best many times and has a Jewel with an indoor waterfall?"
+answer = "Changi Airport"
+
+[sub_resource type="Resource" id="Resource_amh7d"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "SG Landmarks"
+points = 300
+question = "Which area, home to Gardens by the Bay and Marina Bay Sands, was built largely on reclaimed land?"
+answer = "Marina Bay"
+
+[sub_resource type="Resource" id="Resource_fvyaa"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "SG Landmarks"
+points = 400
+question = "Which island resort was once known as Pulau Blakang Mati?"
+answer = "Sentosa"
+
+[sub_resource type="Resource" id="Resource_nnywy"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "SG Landmarks"
+points = 500
+question = "Which of these is a manmade island, formed by joining two islands and used as Singapore's landfill?"
+answer = "Pulau Semakau"
+
+[sub_resource type="Resource" id="Resource_gfdaq"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Finish The Lyric"
+points = 100
+question = "明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？"
+answer = "偏偏喜欢你"
+
+[sub_resource type="Resource" id="Resource_0ijvk"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Finish The Lyric"
+points = 200
+question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？"
+answer = "一片空虚"
+
+[sub_resource type="Resource" id="Resource_yjedc"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Finish The Lyric"
+points = 300
+question = "情义似水滔滔 ＿＿＿"
+answer = "斩不断"
+
+[sub_resource type="Resource" id="Resource_oejri"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Finish The Lyric"
+points = 400
+question = "付过千般爱在你手上，愿你暗中 ＿＿＿＿"
+answer = "送它回来"
+
+[sub_resource type="Resource" id="Resource_r1yls"]
+script = ExtResource("1_4xh8m")
+game = "Game 1"
+topic = "Finish The Lyric"
+points = 500
+question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿"
+answer = "冲开万千结"
+
+[sub_resource type="Resource" id="Resource_yuwdd"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Technology"
+points = 100
+question = "Which company created the iPhone?"
+answer = "Apple"
+
+[sub_resource type="Resource" id="Resource_ug2t5"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Technology"
+points = 200
+question = "Which of the following storage mediums required a laser to \"burn\" data onto it?"
+answer = "Compact Disc"
+
+[sub_resource type="Resource" id="Resource_wf6ru"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Technology"
+points = 300
+question = "What device, popularized by Sony in 1979, let people listen to cassette tapes while walking?"
+answer = "Walkman"
+
+[sub_resource type="Resource" id="Resource_ny422"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Technology"
+points = 400
+question = "What does the \"www\" in a web address stand for?"
+answer = "World Wide Web"
+
+[sub_resource type="Resource" id="Resource_kj1mp"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Technology"
+points = 500
+question = "What does \"CRT\" stand for in old televisions and monitors?"
+answer = "Cathode Ray Tube"
+
+[sub_resource type="Resource" id="Resource_slt7c"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "At What Age"
+points = 100
+question = "At what age are Singaporeans required to register for their NRIC for the first time?"
+answer = "15 years old"
+
+[sub_resource type="Resource" id="Resource_ebbry"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "At What Age"
+points = 200
+question = "At what age can Singaporeans get their class 3/3A driving license?"
+answer = "18 years old"
+
+[sub_resource type="Resource" id="Resource_nvmwx"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "At What Age"
+points = 300
+question = "At what age are Singaporeans legally allowed to vote in a General Election?"
+answer = "21 years old"
+
+[sub_resource type="Resource" id="Resource_ecjre"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "At What Age"
+points = 400
+question = "At what age can an unmarried Singaporean first apply to buy an HDB flat on their own?"
+answer = "35 years old"
+
+[sub_resource type="Resource" id="Resource_wwtwe"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "At What Age"
+points = 500
+question = "At what age must a Singaporean be to run for President of Singapore?"
+answer = "45 years old"
+
+[sub_resource type="Resource" id="Resource_2ddtt"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "MRT Recall"
+points = 100
+question = "Clementi -> Dover -> ?"
+answer = "Buona Vista"
+
+[sub_resource type="Resource" id="Resource_pngwd"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "MRT Recall"
+points = 200
+question = "Which station does not belong: Choa Chu Kang, Yew Tee, Bukit Gombak, Clementi"
+answer = "Clementi"
+
+[sub_resource type="Resource" id="Resource_5gcce"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "MRT Recall"
+points = 300
+question = "Which MRT station is the interchange between the East-West Line and the North-East Line?"
+answer = "Outram Park"
+
+[sub_resource type="Resource" id="Resource_f3vtb"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "MRT Recall"
+points = 400
+question = "Which is the longest MRT line in Singapore?"
+answer = "East-West Line"
+
+[sub_resource type="Resource" id="Resource_x8pjd"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "MRT Recall"
+points = 500
+question = "At 43 metres below ground, which is the deepest MRT station in Singapore?"
+answer = "Bencoolen"
+
+[sub_resource type="Resource" id="Resource_67mwy"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "SG History"
+points = 100
+question = "Which British official established a trading post in Singapore in 1819?"
+answer = "Stamford Raffles"
+
+[sub_resource type="Resource" id="Resource_vmefm"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "SG History"
+points = 200
+question = "What did Lee Kuan Yew believe would boost productivity?"
+answer = "Air conditioning"
+
+[sub_resource type="Resource" id="Resource_o44v2"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "SG History"
+points = 300
+question = "What name did the Japanese give Singapore during the Occupation (1942-1945)?"
+answer = "Syonan-to (\"Light of the South\")"
+
+[sub_resource type="Resource" id="Resource_1ybg7"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "SG History"
+points = 400
+question = "In what year did Singapore's first MRT line begin operating?"
+answer = "1987"
+
+[sub_resource type="Resource" id="Resource_3x6hm"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "SG History"
+points = 500
+question = "Which Sultan of Johor, along with the Temenggong, signed the 1819 agreement with Raffles?"
+answer = "Sultan Hussein Shah"
+
+[sub_resource type="Resource" id="Resource_fgpea"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Finish The Lyric"
+points = 100
+question = "Que sera, sera, Whatever will be, ________ ________"
+answer = "will be"
+
+[sub_resource type="Resource" id="Resource_kaw1b"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Finish The Lyric"
+points = 200
+question = "Que sera, sera, Whatever will be, will be, The future's not ours ________ ________"
+answer = "to see"
+
+[sub_resource type="Resource" id="Resource_3hha6"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Finish The Lyric"
+points = 300
+question = "The young ones, Darling, we're the young ones, And young ones shouldn't ________ ________"
+answer = "be afraid"
+
+[sub_resource type="Resource" id="Resource_s6773"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Finish The Lyric"
+points = 400
+question = "To live, love, while the flame is strong, 'Cause we may not be the young ones ________ ________"
+answer = "very long"
+
+[sub_resource type="Resource" id="Resource_exdjg"]
+script = ExtResource("1_4xh8m")
+game = "Game 2"
+topic = "Finish The Lyric"
+points = 500
+question = "Because in Singapore, Singapore, You'll find happiness ________ ________"
+answer = "for everyone"
+
+[sub_resource type="Resource" id="Resource_3lwau"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Agak-agak"
+points = 100
+question = "How many minutes are in one day?"
+answer = "1,440 minutes"
+
+[sub_resource type="Resource" id="Resource_yoogh"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Agak-agak"
+points = 200
+question = "To the nearest 10 km, how long is Singapore from east to west?"
+answer = "50 km"
+
+[sub_resource type="Resource" id="Resource_jn8rs"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Agak-agak"
+points = 300
+question = "To the nearest 100,000, what is the population of Singapore currently?"
+answer = "6,200,000 people"
+
+[sub_resource type="Resource" id="Resource_88qsg"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Agak-agak"
+points = 400
+question = "To the nearest 1,000, what is the circumference of the earth in kilometers?"
+answer = "40,000 km"
+
+[sub_resource type="Resource" id="Resource_3imae"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Agak-agak"
+points = 500
+question = "To the nearest 100,000 km, what is the average distance from the Earth to the Moon?"
+answer = "400,000 km"
+
+[sub_resource type="Resource" id="Resource_v7wl0"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Abbreviations"
+points = 100
+question = "What does \"MRT\" stand for?"
+answer = "Mass Rapid Transit"
+
+[sub_resource type="Resource" id="Resource_afait"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Abbreviations"
+points = 200
+question = "What does \"HDB\" stand for?"
+answer = "Housing & Development Board"
+
+[sub_resource type="Resource" id="Resource_qivpm"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Abbreviations"
+points = 300
+question = "What does \"ERP\" stand for?"
+answer = "Electronic Road Pricing"
+
+[sub_resource type="Resource" id="Resource_a5f5v"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Abbreviations"
+points = 400
+question = "What does \"NTUC\" stand for?"
+answer = "National Trades Union Congress"
+
+[sub_resource type="Resource" id="Resource_rbsve"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Abbreviations"
+points = 500
+question = "What does \"NETS\" stand for?"
+answer = "Network for Electronic Transfers"
+
+[sub_resource type="Resource" id="Resource_7jofc"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Singaguessr"
+points = 100
+answer = "Changi Airport"
+
+[sub_resource type="Resource" id="Resource_3aece"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Singaguessr"
+points = 200
+answer = "West Coast Plaza"
+
+[sub_resource type="Resource" id="Resource_iabxq"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Singaguessr"
+points = 300
+answer = "Plaza Singapura"
+
+[sub_resource type="Resource" id="Resource_8vgse"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Singaguessr"
+points = 400
+answer = "Chinatown Point"
+
+[sub_resource type="Resource" id="Resource_woopt"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Singaguessr"
+points = 500
+answer = "Bencoolen MRT"
+
+[sub_resource type="Resource" id="Resource_iphws"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "SG Dishes"
+points = 100
+question = "What dish features poached chicken served with fragrant rice and chilli sauce?"
+answer = "Hainanese chicken rice"
+
+[sub_resource type="Resource" id="Resource_njrcs"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "SG Dishes"
+points = 200
+question = "Which crispy flatbread is served with curry for dipping?"
+answer = "Roti prata"
+
+[sub_resource type="Resource" id="Resource_e5dvm"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "SG Dishes"
+points = 300
+question = "Which crab dish is served in a sweet, spicy tomato-chilli sauce?"
+answer = "Chilli crab"
+
+[sub_resource type="Resource" id="Resource_a8yjb"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "SG Dishes"
+points = 400
+question = "What is the name of the spicy coconut milk noodle soup that often has prawns and cockles?"
+answer = "Laksa"
+
+[sub_resource type="Resource" id="Resource_c0v53"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "SG Dishes"
+points = 500
+question = "In Mala, which ingredient causes the spicy yet numbing sensation?"
+answer = "Sichuan pepper"
+
+[sub_resource type="Resource" id="Resource_5kn0v"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Finish The Lyric"
+points = 100
+question = "Pulang, marilah pulang, Marilah pulang ________"
+answer = "bersama-sama"
+
+[sub_resource type="Resource" id="Resource_flym7"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Finish The Lyric"
+points = 200
+question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________"
+answer = "ketipung payung"
+
+[sub_resource type="Resource" id="Resource_nvvbc"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Finish The Lyric"
+points = 300
+question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!"
+answer = "nona jauh"
+
+[sub_resource type="Resource" id="Resource_8f2s5"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Finish The Lyric"
+points = 400
+question = "Di Tanjung Katong, airnya biru, Di situ tempatnya, ________ ________"
+answer = "dara jelita"
+
+[sub_resource type="Resource" id="Resource_p46sc"]
+script = ExtResource("1_4xh8m")
+game = "Game 3"
+topic = "Finish The Lyric"
+points = 500
+question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________"
+answer = "dan lagu"
+
+[resource]
+script = ExtResource("2_gtctc")
+questions = Array[ExtResource("1_4xh8m")]([SubResource("Resource_xxaah"), SubResource("Resource_gu8wy"), SubResource("Resource_61q0c"), SubResource("Resource_kw6ve"), SubResource("Resource_cskf0"), SubResource("Resource_h2hor"), SubResource("Resource_ceycr"), SubResource("Resource_3ysqi"), SubResource("Resource_o7wmi"), SubResource("Resource_io5pn"), SubResource("Resource_ql4fa"), SubResource("Resource_bpbwg"), SubResource("Resource_mdbur"), SubResource("Resource_i05ic"), SubResource("Resource_86o3g"), SubResource("Resource_jloa8"), SubResource("Resource_la1jb"), SubResource("Resource_amh7d"), SubResource("Resource_fvyaa"), SubResource("Resource_nnywy"), SubResource("Resource_gfdaq"), SubResource("Resource_0ijvk"), SubResource("Resource_yjedc"), SubResource("Resource_oejri"), SubResource("Resource_r1yls"), SubResource("Resource_yuwdd"), SubResource("Resource_ug2t5"), SubResource("Resource_wf6ru"), SubResource("Resource_ny422"), SubResource("Resource_kj1mp"), SubResource("Resource_slt7c"), SubResource("Resource_ebbry"), SubResource("Resource_nvmwx"), SubResource("Resource_ecjre"), SubResource("Resource_wwtwe"), SubResource("Resource_2ddtt"), SubResource("Resource_pngwd"), SubResource("Resource_5gcce"), SubResource("Resource_f3vtb"), SubResource("Resource_x8pjd"), SubResource("Resource_67mwy"), SubResource("Resource_vmefm"), SubResource("Resource_o44v2"), SubResource("Resource_1ybg7"), SubResource("Resource_3x6hm"), SubResource("Resource_fgpea"), SubResource("Resource_kaw1b"), SubResource("Resource_3hha6"), SubResource("Resource_s6773"), SubResource("Resource_exdjg"), SubResource("Resource_3lwau"), SubResource("Resource_yoogh"), SubResource("Resource_jn8rs"), SubResource("Resource_88qsg"), SubResource("Resource_3imae"), SubResource("Resource_v7wl0"), SubResource("Resource_afait"), SubResource("Resource_qivpm"), SubResource("Resource_a5f5v"), SubResource("Resource_rbsve"), SubResource("Resource_7jofc"), SubResource("Resource_3aece"), SubResource("Resource_iabxq"), SubResource("Resource_8vgse"), SubResource("Resource_woopt"), SubResource("Resource_iphws"), SubResource("Resource_njrcs"), SubResource("Resource_e5dvm"), SubResource("Resource_a8yjb"), SubResource("Resource_c0v53"), SubResource("Resource_5kn0v"), SubResource("Resource_flym7"), SubResource("Resource_nvvbc"), SubResource("Resource_8f2s5"), SubResource("Resource_p46sc")])
