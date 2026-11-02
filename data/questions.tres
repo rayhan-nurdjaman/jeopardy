@@ -206,22 +206,19 @@ script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 200
-question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？
-chóuxù huī bú qù, kǔmèn sàn bú qù, wèihé wǒ xīn ＿＿＿＿？
-Sorrow can't be shaken off, gloom won't disperse, so why is my heart ＿＿＿＿?"
-answer = "一片空虚"
-wrong_answers = Array[String](["一片光明", "十分欢喜", "无忧无虑"])
+question = "Que sera, sera, Whatever will be, will be, The future's not ours ________ ________"
+answer = "to see"
+wrong_answers = Array[String](["to hear", "to know", "to read"])
 
 [sub_resource type="Resource" id="Resource_wwtwe"]
 script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 300
-question = "情义似水滔滔 ＿＿＿
-qíngyì sì shuǐ tāotāo ＿＿＿
-Bonds of loyalty are like surging water ＿＿＿"
-answer = "斩不断"
-wrong_answers = Array[String](["流不尽", "数不清", "看不见"])
+question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!
+Oh, a feeling of love! Oh, a feeling of love! Oh, look at ________ ________, a feeling of love!"
+answer = "nona jauh"
+wrong_answers = Array[String](["nona manis", "dari jauh", "anak muda"])
 
 [sub_resource type="Resource" id="Resource_2ddtt"]
 script = ExtResource("1_cskf0")
@@ -239,11 +236,9 @@ script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 500
-question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿
-wúnài kùn yú jiǎn zhōng zhèng bù tuō, xiǎng huà húdié ＿＿＿＿＿
-Helplessly trapped in a cocoon, unable to break free; I want to become a butterfly and ＿＿＿＿＿"
-answer = "冲开万千结"
-wrong_answers = Array[String](["飞越万重山", "冲出千重网", "解开千千结"])
+question = "Because in Singapore, Singapore, You'll find happiness ________ ________"
+answer = "for everyone"
+wrong_answers = Array[String](["every day", "for always", "for you"])
 
 [sub_resource type="Resource" id="Resource_5gcce"]
 script = ExtResource("1_cskf0")
@@ -439,18 +434,21 @@ script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 200
-question = "Que sera, sera, Whatever will be, will be, The future's not ours ________ ________"
-answer = "to see"
-wrong_answers = Array[String](["to hear", "to know", "to read"])
+question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________
+(\"Chan Mali Chan\" is a refrain with no literal meaning) ________ ________"
+answer = "ketipung payung"
+wrong_answers = Array[String](["makan nasi", "pergi pasar", "baju biru"])
 
 [sub_resource type="Resource" id="Resource_rbsve"]
 script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 300
-question = "The young ones, Darling, we're the young ones, And young ones shouldn't ________ ________"
-answer = "be afraid"
-wrong_answers = Array[String](["be alone", "be ashamed", "be so sad"])
+question = "情义似水滔滔 ＿＿＿
+qíngyì sì shuǐ tāotāo ＿＿＿
+Bonds of loyalty are like surging water ＿＿＿"
+answer = "斩不断"
+wrong_answers = Array[String](["流不尽", "数不清", "看不见"])
 
 [sub_resource type="Resource" id="Resource_7jofc"]
 script = ExtResource("1_cskf0")
@@ -466,9 +464,10 @@ script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 500
-question = "Because in Singapore, Singapore, You'll find happiness ________ ________"
-answer = "for everyone"
-wrong_answers = Array[String](["every day", "for always", "for you"])
+question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________
+The soul's tremor sweeps over my heart; notes arranged, the rhythm ________ ________"
+answer = "dan lagu"
+wrong_answers = Array[String](["dan syair", "dan nada", "dan merdu"])
 
 [sub_resource type="Resource" id="Resource_iabxq"]
 script = ExtResource("1_cskf0")
@@ -665,20 +664,20 @@ script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 200
-question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________
-(\"Chan Mali Chan\" is a refrain with no literal meaning) ________ ________"
-answer = "ketipung payung"
-wrong_answers = Array[String](["makan nasi", "pergi pasar", "baju biru"])
+question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？
+chóuxù huī bú qù, kǔmèn sàn bú qù, wèihé wǒ xīn ＿＿＿＿？
+Sorrow can't be shaken off, gloom won't disperse, so why is my heart ＿＿＿＿?"
+answer = "一片空虚"
+wrong_answers = Array[String](["一片光明", "十分欢喜", "无忧无虑"])
 
 [sub_resource type="Resource" id="Resource_2ubqk"]
 script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 300
-question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!
-Oh, a feeling of love! Oh, a feeling of love! Oh, look at ________ ________, a feeling of love!"
-answer = "nona jauh"
-wrong_answers = Array[String](["nona manis", "dari jauh", "anak muda"])
+question = "The young ones, Darling, we're the young ones, And young ones shouldn't ________ ________"
+answer = "be afraid"
+wrong_answers = Array[String](["be alone", "be ashamed", "be so sad"])
 
 [sub_resource type="Resource" id="Resource_424fq"]
 script = ExtResource("1_cskf0")
@@ -695,10 +694,11 @@ script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 500
-question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________
-The soul's tremor sweeps over my heart; notes arranged, the rhythm ________ ________"
-answer = "dan lagu"
-wrong_answers = Array[String](["dan syair", "dan nada", "dan merdu"])
+question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿
+wúnài kùn yú jiǎn zhōng zhèng bù tuō, xiǎng huà húdié ＿＿＿＿＿
+Helplessly trapped in a cocoon, unable to break free; I want to become a butterfly and ＿＿＿＿＿"
+answer = "冲开万千结"
+wrong_answers = Array[String](["飞越万重山", "冲出千重网", "解开千千结"])
 
 [resource]
 script = ExtResource("8_bpbwg")
