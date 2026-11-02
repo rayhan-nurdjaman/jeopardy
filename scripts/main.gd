@@ -95,7 +95,7 @@ func _show_start() -> void:
 	add_child(box)
 
 	var title := Label.new()
-	title.text = "JEOPARDY"
+	title.text = "TRIVIA"
 	title.add_theme_color_override("font_color", BlueSkin.GOLD)
 	title.add_theme_font_size_override("font_size", 72)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -192,7 +192,7 @@ func _show_grid() -> void:
 		tb.button_group = group
 		tb.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		tb.custom_minimum_size = Vector2(0, 80)
-		tb.add_theme_font_size_override("font_size", 24)
+		tb.add_theme_font_size_override("font_size", 34)
 		tb.toggled.connect(func(on: bool) -> void:
 			if on:
 				active_team = i)
@@ -209,7 +209,7 @@ func _show_grid() -> void:
 		h.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		h.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		h.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		h.add_theme_font_size_override("font_size", 28)
+		h.add_theme_font_size_override("font_size", 39)
 		h.add_theme_color_override("font_color", BlueSkin.GOLD)
 		grid.add_child(h)
 
@@ -219,7 +219,7 @@ func _show_grid() -> void:
 			b.text = str(p)
 			b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			b.size_flags_vertical = Control.SIZE_EXPAND_FILL
-			b.add_theme_font_size_override("font_size", 32)
+			b.add_theme_font_size_override("font_size", 78)
 
 			b.pressed.connect(_show_question.bind(t, p, b))
 			grid.add_child(b)
@@ -316,7 +316,7 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 	var center := CenterContainer.new()
 	safe.add_child(center)
 	var panel := PanelContainer.new()
-	panel.custom_minimum_size = Vector2(1000, 0)
+	panel.custom_minimum_size = Vector2(1150, 0)
 	center.add_child(panel)
 	var pad := MarginContainer.new()
 	for side in ["left", "right", "top", "bottom"]:
@@ -331,14 +331,14 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 		pic.texture = q.image
 		pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		pic.custom_minimum_size = Vector2(0, 360)
+		pic.custom_minimum_size = Vector2(0, 400)
 		box.add_child(pic)
 
 	var text := Label.new()
 	text.text = q.question
 	text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	text.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	text.add_theme_font_size_override("font_size", 34)
+	text.add_theme_font_size_override("font_size", 53)
 	box.add_child(text)
 
 	var choices: Array[String] = [q.answer]
@@ -359,7 +359,7 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 		ab.text = c
 		var letter := Label.new()
 		letter.text = char(65 + i)
-		letter.add_theme_font_size_override("font_size", 32)
+		letter.add_theme_font_size_override("font_size", 45)
 		letter.add_theme_color_override("font_color", BlueSkin.GOLD)
 		letter.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		letter.set_anchors_and_offsets_preset(Control.PRESET_LEFT_WIDE)
@@ -368,8 +368,8 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 		ab.add_child(letter)
 		ab.set_meta("correct", c == q.answer)
 		ab.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		ab.custom_minimum_size = Vector2(0, 90)
-		ab.add_theme_font_size_override("font_size", 32)
+		ab.custom_minimum_size = Vector2(0, 100)
+		ab.add_theme_font_size_override("font_size", 50)
 		answers.add_child(ab)
 
 	var bar := ProgressBar.new()

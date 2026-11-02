@@ -114,7 +114,7 @@ game = "Game 1"
 topic = "Household Items"
 points = 200
 question = "What animal is on the side of the small hexagonal jar of herbal ointment?"
-answer = "Tiger (Tiger Balm)"
+answer = "Tiger"
 wrong_answers = Array[String](["Lion", "Dragon", "Panda"])
 
 [sub_resource type="Resource" id="Resource_r1yls"]
@@ -196,7 +196,7 @@ game = "Game 1"
 topic = "Finish The Lyric"
 points = 100
 question = "明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？
-míngbái dào ài shīqù, yíqiè dōu bú duì, wǒ yòu wèihé ＿＿＿＿＿？
+
 I understand that love is lost and everything is wrong, so why do I ＿＿＿＿＿?"
 answer = "偏偏喜欢你"
 wrong_answers = Array[String](["想去吃火锅", "今天不上班", "恨你到永远"])
@@ -226,7 +226,7 @@ game = "Game 1"
 topic = "Finish The Lyric"
 points = 400
 question = "付过千般爱在你手上，愿你暗中 ＿＿＿＿
-fùguò qiānbān ài zài nǐ shǒu shàng, yuàn nǐ ànzhōng ＿＿＿＿
+
 I've placed a thousand loves in your hands; I wish that in secret you would ＿＿＿＿"
 answer = "送它回来"
 wrong_answers = Array[String](["好好珍惜", "收藏起来", "把它带走"])
