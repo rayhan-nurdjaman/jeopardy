@@ -1,0 +1,431 @@
+RESEARCH REQUEST: TRIVIA FACT-CHECK
+===================================
+
+I'm building a Singapore-themed multiple-choice trivia game. The items below are
+ones I could not verify myself. For each item, please:
+
+  1. Say whether the marked "Answer" is correct (YES / NO / PARTLY).
+  2. Give the right answer if not, with a source (URL or publication).
+  3. Say whether each "Wrong option" is clearly wrong. Flag any wrong option that
+     could ALSO be argued as correct.
+  4. Where the item says "Wrong options: suggest", propose better ones.
+  5. Keep any suggested wrong options at a similar difficulty. Lower-point
+     questions should have clearly wrong options. Higher-point ones should have
+     plausible near-misses that are still fair.
+
+Format per item: [ID] Verdict | Correct answer | Source | Notes on wrong options.
+
+Each item: [ID] points | question | answer | wrong options | what I'm unsure about.
+
+
+-----------------------------------------------------------------------------
+A. FACTUAL ANSWERS I'M NOT SURE OF
+-----------------------------------------------------------------------------
+
+[A1] Game 2 / MRT Recall / 500 pts
+  Question: At 43 metres below ground, which is the deepest MRT station in Singapore?
+  Answer:   Bencoolen
+  Wrong:    Bras Basah | Bugis | Rochor
+  Unsure:   Is Bencoolen the deepest? Is 43 m the correct depth? Some sources
+            cite Bencoolen (DTL), Bras Basah (CCL) or HarbourFront/Hume. Check
+            whether the claimed depth and station match, and whether the wrong
+            options (Bras Basah, Bugis, Rochor) are plausible but clearly not
+            the deepest.
+
+[A2] Game 2 / MRT Recall / 400 pts
+  Question: Which is the longest MRT line in Singapore?
+  Answer:   East-West Line
+  Wrong:    North-South Line | Downtown Line | Circle Line
+  Unsure:   Longest by route length or by number of stations? The Downtown Line
+            has ~42 km and the East-West Line ~57 km (including the Changi
+            Airport branch). Confirm, and note whether the Thomson-East Coast
+            Line (as it is extended) is now longer.
+
+[A3] Game 2 / MRT Recall / 300 pts
+  Question: Which MRT station is the interchange between the East-West Line and
+            the North-East Line?
+  Answer:   Outram Park
+  Wrong:    Dhoby Ghaut | Raffles Place | Tanjong Pagar
+  Unsure:   Outram Park is also on the Thomson-East Coast Line. Confirm it is the
+            ONLY EWL/NEL interchange. Also check whether Dhoby Ghaut
+            (NSL/NEL/CCL) or Raffles Place (NSL/EWL) could be argued.
+
+[A4] Game 2 / MRT Recall / 200 pts
+  Question: Which station does not belong: Choa Chu Kang, Yew Tee, Bukit Gombak,
+            Clementi
+  Answer:   Clementi
+  Wrong:    Choa Chu Kang | Yew Tee | Bukit Gombak
+  Unsure:   Are Choa Chu Kang, Yew Tee and Bukit Gombak all on the same line
+            (NSL for Yew Tee and CCK, but Bukit Gombak is NSL too)? Confirm
+            that Clementi is the only EWL station here, and that the question
+            is unambiguous. (Choa Chu Kang is also on the Bukit Panjang LRT.)
+
+[A5] Game 2 / MRT Recall / 100 pts
+  Question: Clementi -> Dover -> ?
+  Answer:   Buona Vista
+  Wrong:    Orchard | Changi Airport | Jurong East
+  Unsure:   Direction check: on the East-West Line the order from the west is
+            Jurong East -> Clementi -> Dover -> Buona Vista. Confirm the answer
+            is right for the direction implied, and whether "Jurong East" is a
+            fair wrong answer (it is the station BEFORE Clementi).
+
+[A6] Game 2 / SG History / 400 pts
+  Question: In what year did Singapore's first MRT line begin operating?
+  Answer:   1987
+  Wrong:    1983 | 1985 | 1990
+  Unsure:   Confirm the exact date of the first passenger service (Yio Chu Kang
+            to Toa Payoh, 7 Nov 1987). Check whether another year (e.g. 1988
+            for the full NSL) could be argued.
+
+[A7] Game 2 / SG History / 500 pts
+  Question: Which Sultan of Johor, along with the Temenggong, signed the 1819
+            agreement with Raffles?
+  Answer:   Sultan Hussein Shah
+  Wrong:    Sultan Abu Bakar | Sultan Ibrahim | Sultan Iskandar
+  Unsure:   Historians question whether Hussein Shah was Sultan of JOHOR or the
+            Sultan of the Johor-Riau empire, and whether the Temenggong
+            (Abdul Rahman) was a co-signatory. Please confirm the safest
+            phrasing and the title used.
+
+[A8] Game 2 / SG History / 300 pts
+  Question: What name did the Japanese give Singapore during the Occupation
+            (1942-1945)?
+  Answer:   Syonan-to ("Light of the South")
+  Wrong:    Nippon-to ("Island of Japan") | Hikari-machi ("City of Light") |
+            Minami-to ("Southern Island")
+  Unsure:   Confirm the spelling (Syonan-to / Shonan-to) and the translation
+            ("Light of the South"). Check that my invented wrong options are
+            not real names used at any time.
+
+[A9] Game 2 / SG History / 200 pts
+  Question: What did Lee Kuan Yew believe would boost productivity?
+  Answer:   Air conditioning
+  Wrong:    Free education | Longer working hours | Public transport
+  Unsure:   Confirm the source of the quote (LKY said air conditioning was a
+            "most important invention" for Singapore). Check that the wrong
+            options are clearly not what he said.
+
+[A10] Game 2 / At What Age / 100-500 pts
+  Q100: At what age are Singaporeans required to register for their NRIC for
+        the first time?  Answer: 15 years old
+  Q200: At what age can Singaporeans get their class 3/3A driving license?
+        Answer: 18 years old
+  Q300: At what age are Singaporeans legally allowed to vote in a General
+        Election?  Answer: 21 years old
+  Q400: At what age can an unmarried Singaporean first apply to buy an HDB flat
+        on their own?  Answer: 35 years old
+  Q500: At what age must a Singaporean be to run for President of Singapore?
+        Answer: 45 years old
+  Wrong options used: 100: 5/30/60 | 200: 12/16/25 | 300: 16/18/25 |
+                      400: 21/30/40 | 500: 35/40/50
+  Unsure:   All five are policy facts that change. Please verify each against
+            current law/policy (voting age is 21; NRIC registration at 15;
+            Class 3 test minimum 18; Singles Scheme age 35; presidential age
+            45). Note anything that has changed or has exceptions (e.g. HDB
+            Singles Scheme age or eligibility for the BTO).
+
+[A11] Game 1 / Household Items / 200 pts
+  Question: What animal is on the side of the small hexagonal jar of herbal
+            ointment?
+  Answer:   Tiger (Tiger Balm)
+  Wrong:    Lion | Dragon | Panda
+  Unsure:   Tiger Balm jars show a tiger. Confirm. Also check whether "Dragon"
+            or another animal could be argued for similar ointments.
+
+[A12] Game 1 / Household Items / 300 pts
+  Question: What bilingual greeting is printed in red on the classic white
+            cotton face towel bordered by thin blue lines?
+  Answer:   Good Morning/祝君早安
+  Wrong:    Welcome/欢迎 | Good Night/晚安 | Good Health/身体健康
+  Unsure:   Confirm the exact bilingual wording on the classic "Good Morning"
+            towel (the traditional Chinese text is 祝君早安). An image is
+            now included for this question in the game.
+
+[A13] Game 1 / Household Items / 400 pts
+  Question: What brand is the round tin of Danish butter cookies is famously
+            used to store sewing needles and thread?
+  Answer:   Royal Dansk
+  Wrong:    Kjeldsens | Danisa | Jacobsens
+  Unsure:   The classic blue tin is most associated with Royal Dansk (also
+            Kjeldsens in some markets). Check whether Kjeldsens (or Danisa)
+            could ALSO be argued as correct, in which case replace the wrong
+            options.
+
+[A14] Game 1 / Household Items / 500 pts
+  Question: What shatterproof material is used to make the plates and bowls
+            found in almost every hawker centre?
+  Answer:   Melamine
+  Wrong:    Polystyrene | Acrylic | Bakelite
+  Unsure:   Are hawker plates and bowls melamine? Some are polypropylene or
+            other plastics. Confirm which is most common. Note that Bakelite
+            is a close relative of melamine resin; check whether it could be
+            argued as correct.
+
+[A15] Game 1 / SG Landmarks / 200 pts
+  Question: Which Singapore airport was named the world's best many times and
+            has a Jewel with an indoor waterfall?
+  Answer:   Changi Airport
+  Wrong:    Seletar Airport | Paya Lebar Airport | Haneda Airport
+  Unsure:   Confirm Changi's "World's Best Airport" record and that the
+            "Jewel" and indoor waterfall are as described. Check that Haneda
+            (not in Singapore) is a fair wrong option.
+
+[A16] Game 1 / SG Landmarks / 300 pts
+  Question: Which area, home to Gardens by the Bay and Marina Bay Sands, was
+            built largely on reclaimed land?
+  Answer:   Marina Bay
+  Wrong:    Raffles Place | Kallang | Jurong East
+  Unsure:   Confirm that Marina Bay is largely reclaimed. Check that Kallang
+            and Raffles Place are not partly reclaimed too (Raffles Place is
+            adjacent) and so could be argued.
+
+[A17] Game 1 / SG Landmarks / 400 pts
+  Question: Which island resort was once known as Pulau Blakang Mati?
+  Answer:   Sentosa
+  Wrong:    Pulau Ubin | Kusu Island | St John's Island
+  Unsure:   Confirm the former name and its meaning ("Island of Death from
+            Behind"). Confirm that none of the other islands had a similar
+            old name.
+
+[A18] Game 1 / SG Landmarks / 500 pts
+  Question: Which of these is a manmade island, formed by joining two islands
+            and used as Singapore's landfill?
+  Answer:   Pulau Semakau
+  Wrong:    Pulau Tekong | Pulau Brani | Pulau Ubin
+  Unsure:   Confirm Semakau was formed by joining Pulau Semakau and Pulau
+            Sakeng (and is the landfill). Check that Tekong (partly reclaimed)
+            or Brani could not be argued as correct.
+
+[A19] Game 1 / Rare Words / 200-500 pts
+  Q200: Which of these word means "to throw a person out of a window"
+        Answer: Defenestrate
+        Wrong: Evict | Exfoliate | Decapitate
+  Q300: Which word describes the small plastic or metal tube on the end of a
+        shoelace?   Answer: Aglet
+        Wrong: Eyelet | Grommet | Bobbin
+  Q400: Which word refers to the indentation above your upper lip and below
+        your nose?   Answer: Philtrum
+        Wrong: Septum | Frenulum | Columella
+  Q500: Which word refers to the pleasant, earthy smell that accompanies the
+        first rain after a long period of warm, dry weather?
+        Answer: Petrichor
+        Wrong: Pluviophile | Zephyr | Ozonosphere
+  Unsure:   Confirm definitions. For 400/500, check that none of the wrong
+            options also describes the same thing (e.g. is the "columella" or
+            "septum" ever called the philtrum? is "Pluviophile" a lover of
+            rain rather than the smell?).
+
+[A20] Game 1 / Historic Years / 200-500 pts
+  Q100: Singapore independence: 1965 | Wrong: 1819, 1942, 2000
+  Q200: Moon landing: 1969 | Wrong: 1949, 1959, 1979
+  Q300: Berlin Wall fell: 1989 | Wrong: 1961, 1979, 1991
+  Q400: Titanic sank: 1912 | Wrong: 1905, 1915, 1920
+  Q500: Magna Carta sealed: 1215 | Wrong: 1066, 1315, 1415
+  Unsure:   Standard facts, but please confirm and say whether any wrong year
+            could be argued (e.g. Singapore left Malaysia in Aug 1965; it
+            gained self-government in 1959 and joined Malaysia in 1963).
+            Also check that 1991 (Soviet collapse), 1066 etc. are fair wrong
+            options.
+
+[A21] Game 2 / Technology / 100-500 pts
+  Q200: Which of the following storage mediums required a laser to "burn" data
+        onto it?  Answer: Compact Disc
+        Wrong: Floppy Disk | Cassette Tape | USB Flash Drive
+  Q300: What device, popularized by Sony in 1979, let people listen to cassette
+        tapes while walking?  Answer: Walkman
+        Wrong: Discman | iPod | Boombox
+  Q400: What does the "www" in a web address stand for?
+        Answer: World Wide Web
+        Wrong: Wide World Web | World Wide Wire | Web Wide World
+  Q500: What does "CRT" stand for in old televisions and monitors?
+        Answer: Cathode Ray Tube
+        Wrong: Cathode Ray Terminal | Colour Raster Tube | Cathodic Radiation Tube
+  Unsure:   Confirm 1979 for the Walkman. The Q200 phrasing says "required a
+            laser to burn", so check that CD-R/CD-RW fit and whether a plain
+            pressed CD is "burned". For Q500, check that "Cathode Ray Terminal"
+            is not a real alternate name.
+
+
+-----------------------------------------------------------------------------
+B. NUMERIC ESTIMATION (Game 3 / Agak-agak)
+-----------------------------------------------------------------------------
+
+[B1] 100 pts: How many minutes are in one day?
+  Answer: 1,440 minutes | Wrong: 24 minutes, 600 minutes, 14,400 minutes
+[B2] 200 pts: To the nearest 10 km, how long is Singapore from east to west?
+  Answer: 50 km | Wrong: 10 km, 30 km, 80 km
+[B3] 300 pts: To the nearest 100,000, what is the population of Singapore
+  currently?
+  Answer: 6,200,000 people | Wrong: 2,200,000, 4,800,000, 9,200,000
+[B4] 400 pts: To the nearest 1,000, what is the circumference of the earth in
+  kilometers?
+  Answer: 40,000 km | Wrong: 12,000, 20,000, 80,000
+[B5] 500 pts: To the nearest 100,000 km, what is the average distance from the
+  Earth to the Moon?
+  Answer: 400,000 km | Wrong: 40,000, 150,000, 1,000,000
+  Unsure:   B2: the answer "50 km" - the island is ~50 km east-west (about 49.8
+            km by some sources). Confirm and say whether "nearest 10 km" is
+            satisfied. B3: the 2024-2025 population figure (total population
+            vs. resident population). Please state which figure is ~6.2
+            million and for which year. B4: circumference is about 40,075 km
+            at the equator, 40,008 km through the poles. Confirm it rounds to
+            40,000 "to the nearest 1,000". B5: average distance ~384,400 km,
+            which rounds to 400,000 "to the nearest 100,000". Confirm.
+
+
+-----------------------------------------------------------------------------
+C. ABBREVIATIONS (Game 3)
+-----------------------------------------------------------------------------
+
+[C1] 200 pts: HDB = Housing & Development Board
+  Wrong: Home Development Board | Housing & Estate Board | Housing Development
+         Bureau
+[C2] 300 pts: ERP = Electronic Road Pricing
+  Wrong: Electronic Road Payment | Electronic Road Permit | Electric Route Pricing
+[C3] 400 pts: NTUC = National Trades Union Congress
+  Wrong: National Trade Union Council | National Teachers' Union Congress |
+         National Transport Union Congress
+[C4] 500 pts: NETS = Network for Electronic Transfers
+  Wrong: Network for Electronic Transactions | National Electronic Transfers
+         Service | Network of Electronic Terminals
+  Unsure:   Confirm the official expansion of each. In particular NETS:
+            "Network for Electronic Transfers (Singapore)" vs "Network for
+            Electronic Transfers Singapore Pte Ltd". For C3 note "Trades" vs
+            "Trade". Check that none of my wrong options are accepted
+            alternatives.
+
+
+-----------------------------------------------------------------------------
+D. SG DISHES (Game 3)
+-----------------------------------------------------------------------------
+
+[D1] 300 pts: Which crab dish is served in a sweet, spicy tomato-chilli sauce?
+  Answer: Chilli crab | Wrong: Black pepper crab | Sambal stingray | Fish head
+  curry
+[D2] 400 pts: What is the name of the spicy coconut milk noodle soup that often
+  has prawns and cockles?  Answer: Laksa | Wrong: Mee siam | Prawn mee |
+  Mee rebus
+[D3] 500 pts: In Mala, which ingredient causes the spicy yet numbing
+  sensation?  Answer: Sichuan pepper | Wrong: Black pepper | Star anise |
+  Dried chillies
+  Unsure:   D1: "Sambal stingray" and "Fish head curry" are not crab dishes, so
+            the options are weak. Please suggest better wrong options from
+            other crab dishes (e.g. salted egg crab). D2: Laksa vs. Katong
+            Laksa. Is "Mee siam" a fair wrong option? D3: confirm that the
+            numbing sensation (ma) is from Sichuan peppercorn and the spicy
+            from dried chillies, and whether "Black pepper" is an acceptable
+            wrong option.
+
+
+-----------------------------------------------------------------------------
+E. FINISH THE LYRIC
+-----------------------------------------------------------------------------
+I need a native / fluent check of the lyrics, the pinyin, the English
+translations I wrote (I translated them myself and did not verify them), and
+the wrong options (which I invented).
+
+[E1] Chinese lyrics (Game 1, source: Cantopop - verify the song & artist):
+  100: 明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？   Answer: 偏偏喜欢你
+       Wrong: 想去吃火锅 | 今天不上班 | 恨你到永远
+  200: 愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？   Answer: 一片空虚
+       Wrong: 一片光明 | 十分欢喜 | 无忧无虑
+  300: 情义似水滔滔 ＿＿＿   Answer: 斩不断
+       Wrong: 流不尽 | 数不清 | 看不见
+  400: 付过千般爱在你手上，愿你暗中 ＿＿＿＿   Answer: 送它回来
+       Wrong: 好好珍惜 | 收藏起来 | 把它带走
+  500: 无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿   Answer: 冲开万千结
+       Wrong: 飞越万重山 | 冲出千重网 | 解开千千结
+  Pinyin and English translation lines that I wrote:
+    100: míngbái dào ài shīqù, yīqiè dōu bú duì, wǒ yòu wèihé ＿＿＿＿＿？
+         "I understand that love is lost and everything is wrong, so why do I
+         ＿＿＿＿＿?"
+    200: chóuxù huī bú qù, kǔmèn sàn bú qù, wèihé wǒ xīn ＿＿＿＿？
+         "Sorrow can't be shaken off, gloom won't disperse, so why is my heart
+         ＿＿＿＿?"
+    300: qíngyì sì shuǐ tāotāo ＿＿＿
+         "Bonds of loyalty are like surging water ＿＿＿"
+    400: fùguò qiānbān ài zài nǐ shǒu shàng, yuàn nǐ ànzhōng ＿＿＿＿
+         "I've placed a thousand loves in your hands; I wish that in secret
+         you would ＿＿＿＿"
+    500: wúnài kùn yú jiǎn zhōng zhèng bù tuō, xiǎng huà húdié ＿＿＿＿＿
+         "Helplessly trapped in a cocoon, unable to break free; I want to
+         become a butterfly and ＿＿＿＿＿"
+  Check: (a) the song and the correct lyric for each line; (b) the pinyin is
+  right (tones); (c) the English meaning is faithful; (d) the wrong options are
+  clearly wrong but fair at their difficulty. Note: 500's wrong option "解开千千结"
+  may be a real lyric from another song ("千千阙歌" / "千千结") - please check
+  it is not also correct here.
+
+[E2] English lyrics (Game 2):
+  100: Que sera, sera, Whatever will be, ________ ________   Answer: will be
+       Wrong: go away | be sad | run fast
+  200: ...The future's not ours ________ ________   Answer: to see
+       Wrong: to hear | to know | to read
+  300: The young ones, Darling, we're the young ones, And young ones shouldn't
+       ________ ________   Answer: be afraid
+       Wrong: be alone | be ashamed | be so sad
+  400: To live, love, while the flame is strong, 'Cause we may not be the young
+       ones ________ ________   Answer: very long
+       Wrong: too long | stay long | last long
+  500: Because in Singapore, Singapore, You'll find happiness ________ ________
+       Answer: for everyone
+       Wrong: every day | for always | for you
+  Unsure:   Confirm the exact lyrics of 100-500 (the first two are "Que Sera,
+            Sera" by Doris Day; the next two are Cliff Richard's "Young
+            Ones"; the last is a Singapore song, possibly "Count on Me,
+            Singapore" or "Home"). For 300 the real lyric is "be afraid" but
+            the original line is "And young ones shouldn't be afraid". For 500
+            please identify the song and exact line. Also check my wrong
+            options are not close to the original.
+
+[E3] Malay lyrics (Game 3):
+  100: Pulang, marilah pulang, Marilah pulang ________   Answer: bersama-sama
+       English I wrote: "Return, come let us return, come let us return ________"
+       Wrong: sekarang | cepat-cepat | besok pagi
+  200: Chan mali chan, chan mali chan, Chan mali chan, ________ ________
+       Answer: ketipung payung
+       English I wrote: ("Chan Mali Chan" is a refrain with no literal
+       meaning) ________ ________
+       Wrong: makan nasi | pergi pasar | baju biru
+  300: Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________,
+       rasa sayang sayang, eh!   Answer: nona jauh
+       English I wrote: "Oh, a feeling of love! Oh, a feeling of love! Oh, look
+       at ________ ________, a feeling of love!"
+       Wrong: nona manis | dari jauh | anak muda
+  400: Di Tanjung Katong, airnya biru, Di situ tempatnya, ________ ________
+       Answer: dara jelita
+       English I wrote: "At Tanjong Katong the water is blue; that is the place
+       of ________ ________"
+       Wrong: dara manis | puteri raja | gadis cantik
+  500: Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________
+       Answer: dan lagu
+       English I wrote: "The soul's tremor sweeps over my heart; notes
+       arranged, the rhythm ________ ________"
+       Wrong: dan syair | dan nada | dan merdu
+  Unsure:   Confirm the songs and exact lyrics: 100 is probably "Pulang
+            Pulang" / "Marilah Pulang"; 200 ("Chan Mali Chan") has several
+            versions of the line; 300 is "Rasa Sayang" - the line is often
+            "Eh, lihat nona jauh"; 400 is "Tanjong Katong"; 500 is
+            "Getaran Jiwa". For each: is the answer the exact lyric, is my
+            translation faithful, and could any wrong option be argued as
+            correct (particularly "dara manis" and "gadis cantik" for 400, and
+            "dan syair" for 500)?
+
+
+-----------------------------------------------------------------------------
+F. SINGAGUESSR (Game 3, image questions)
+-----------------------------------------------------------------------------
+These are image-only questions (no text), with the image supplied by me.
+
+[F1] 100: Changi Airport      | Wrong: Sentosa | Marina Bay Sands | Gardens by
+      the Bay
+[F2] 200: West Coast Plaza    | Wrong: Jurong Point | Tampines Mall | VivoCity
+[F3] 300: Plaza Singapura     | Wrong: Orchard Central | Funan | Bugis Junction
+[F4] 400: Chinatown Point     | Wrong: People's Park Complex | Chinatown
+      Complex | Clarke Quay Central
+[F5] 500: Bencoolen MRT       | Wrong: Bugis MRT | Bras Basah MRT | Rochor MRT
+  Unsure:   I can't check the images against the answers from here. Please
+            confirm the wrong options are real places that look clearly
+            different at 100, and increasingly similar at 400-500, and that
+            "Clarke Quay Central" and the other names exist. Suggest
+            replacements where a place doesn't exist or isn't plausible.

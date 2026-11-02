@@ -1,180 +1,208 @@
-[gd_resource type="Resource" script_class="QuestionBank" load_steps=78 format=3]
+[gd_resource type="Resource" script_class="QuestionBank" load_steps=84 format=3]
 
-[ext_resource type="Script" path="res://scripts/question.gd" id="1_4xh8m"]
-[ext_resource type="Script" path="res://scripts/question_bank.gd" id="2_gtctc"]
+[ext_resource type="Script" path="res://scripts/question.gd" id="1_cskf0"]
+[ext_resource type="Texture2D" path="res://images/household/300_good_morning_towel.jpeg" id="2_h2hor"]
+[ext_resource type="Texture2D" path="res://images/singaguessr/100_changi.jpeg" id="3_ceycr"]
+[ext_resource type="Texture2D" path="res://images/singaguessr/200_west_coast.jpeg" id="4_3ysqi"]
+[ext_resource type="Texture2D" path="res://images/singaguessr/300_plaza_singapura.jpeg" id="5_o7wmi"]
+[ext_resource type="Texture2D" path="res://images/singaguessr/400_chinatown_point.jpeg" id="6_io5pn"]
+[ext_resource type="Texture2D" path="res://images/singaguessr/500_bencoolen.jpeg" id="7_ql4fa"]
+[ext_resource type="Script" path="res://scripts/question_bank.gd" id="8_bpbwg"]
 
-[sub_resource type="Resource" id="Resource_xxaah"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_mdbur"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Rare Words"
 points = 100
 question = "Which word refers to the symbol & (which represents the word \"and\")?"
 answer = "Ampersand"
+wrong_answers = Array[String](["Asterisk", "Hashtag", "Parenthesis"])
 
-[sub_resource type="Resource" id="Resource_gu8wy"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_i05ic"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Rare Words"
 points = 200
 question = "Which of these word means \"to throw a person out of a window\""
 answer = "Defenestrate"
+wrong_answers = Array[String](["Evict", "Exfoliate", "Decapitate"])
 
-[sub_resource type="Resource" id="Resource_61q0c"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_86o3g"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Rare Words"
 points = 300
 question = "Which word describes the small plastic or metal tube on the end of a shoelace?"
 answer = "Aglet"
+wrong_answers = Array[String](["Eyelet", "Grommet", "Bobbin"])
 
-[sub_resource type="Resource" id="Resource_kw6ve"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_jloa8"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Rare Words"
 points = 400
 question = "Which word refers to the indentation above your upper lip and below your nose?"
 answer = "Philtrum"
+wrong_answers = Array[String](["Septum", "Frenulum", "Columella"])
 
-[sub_resource type="Resource" id="Resource_cskf0"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_la1jb"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Rare Words"
 points = 500
 question = "Which word refers to the pleasant, earthy smell that accompanies the first rain after a long period of warm, dry weather?"
 answer = "Petrichor"
+wrong_answers = Array[String](["Pluviophile", "Zephyr", "Ozonosphere"])
 
-[sub_resource type="Resource" id="Resource_h2hor"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_amh7d"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Historic Years"
 points = 100
 question = "What year did Singapore gain independence?"
 answer = "1965"
+wrong_answers = Array[String](["1819", "1942", "2000"])
 
-[sub_resource type="Resource" id="Resource_ceycr"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_fvyaa"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Historic Years"
 points = 200
 question = "In what year did humans first land on the Moon?"
 answer = "1969"
+wrong_answers = Array[String](["1949", "1959", "1979"])
 
-[sub_resource type="Resource" id="Resource_3ysqi"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_nnywy"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Historic Years"
 points = 300
 question = "In what year did the Berlin Wall fall?"
 answer = "1989"
+wrong_answers = Array[String](["1961", "1979", "1991"])
 
-[sub_resource type="Resource" id="Resource_o7wmi"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_gfdaq"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Historic Years"
 points = 400
 question = "In what year did the Titanic sink?"
 answer = "1912"
+wrong_answers = Array[String](["1905", "1915", "1920"])
 
-[sub_resource type="Resource" id="Resource_io5pn"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_0ijvk"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Historic Years"
 points = 500
 question = "In what year did the Magna Carta get sealed?"
 answer = "1215"
+wrong_answers = Array[String](["1066", "1315", "1415"])
 
-[sub_resource type="Resource" id="Resource_ql4fa"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_yjedc"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Household Items"
 points = 100
 question = "What chocolate drink comes in a tin with a green label?"
 answer = "Milo"
+wrong_answers = Array[String](["Pepsi", "Yakult", "Red Bull"])
 
-[sub_resource type="Resource" id="Resource_bpbwg"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_oejri"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Household Items"
 points = 200
 question = "What animal is on the side of the small hexagonal jar of herbal ointment?"
 answer = "Tiger (Tiger Balm)"
+wrong_answers = Array[String](["Lion", "Dragon", "Panda"])
 
-[sub_resource type="Resource" id="Resource_mdbur"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_r1yls"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Household Items"
 points = 300
 question = "What bilingual greeting is printed in red on the classic white cotton face towel bordered by thin blue lines?"
 answer = "Good Morning/祝君早安"
+wrong_answers = Array[String](["Welcome/欢迎", "Good Night/晚安", "Good Health/身体健康"])
+image = ExtResource("2_h2hor")
 
-[sub_resource type="Resource" id="Resource_i05ic"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_yuwdd"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Household Items"
 points = 400
 question = "What brand is the round tin of Danish butter cookies is famously used to store sewing needles and thread?"
 answer = "Royal Dansk"
+wrong_answers = Array[String](["Khong Guan", "Walkers", "Famous Amos"])
 
-[sub_resource type="Resource" id="Resource_86o3g"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_ug2t5"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Household Items"
 points = 500
 question = "What shatterproof material is used to make the plates and bowls found in almost every hawker centre?"
 answer = "Melamine"
+wrong_answers = Array[String](["Polystyrene", "Acrylic", "Bakelite"])
 
-[sub_resource type="Resource" id="Resource_jloa8"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_wf6ru"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "SG Landmarks"
 points = 100
 question = "Which Singapore statue is half lion and half fish?"
 answer = "Merlion"
+wrong_answers = Array[String](["Garuda", "Sphinx", "Griffin"])
 
-[sub_resource type="Resource" id="Resource_la1jb"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_ny422"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "SG Landmarks"
 points = 200
 question = "Which Singapore airport was named the world's best many times and has a Jewel with an indoor waterfall?"
 answer = "Changi Airport"
+wrong_answers = Array[String](["Seletar Airport", "Paya Lebar Airport", "Haneda Airport"])
 
-[sub_resource type="Resource" id="Resource_amh7d"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_kj1mp"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "SG Landmarks"
 points = 300
 question = "Which area, home to Gardens by the Bay and Marina Bay Sands, was built largely on reclaimed land?"
 answer = "Marina Bay"
+wrong_answers = Array[String](["Raffles Place", "Kallang", "Jurong East"])
 
-[sub_resource type="Resource" id="Resource_fvyaa"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_slt7c"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "SG Landmarks"
 points = 400
 question = "Which island resort was once known as Pulau Blakang Mati?"
 answer = "Sentosa"
+wrong_answers = Array[String](["Pulau Ubin", "Kusu Island", "St John's Island"])
 
-[sub_resource type="Resource" id="Resource_nnywy"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_ebbry"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "SG Landmarks"
 points = 500
 question = "Which of these is a manmade island, formed by joining two islands and used as Singapore's landfill?"
 answer = "Pulau Semakau"
+wrong_answers = Array[String](["Pulau Tekong", "Pulau Brani", "Pulau Ubin"])
 
-[sub_resource type="Resource" id="Resource_gfdaq"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_nvmwx"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 100
 question = "明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？
-míngbái dào ài shīqù, yīqiè dōu bú duì, wǒ yòu wèihé ＿＿＿＿＿？
+míngbái dào ài shīqù, yíqiè dōu bú duì, wǒ yòu wèihé ＿＿＿＿＿？
 I understand that love is lost and everything is wrong, so why do I ＿＿＿＿＿?"
 answer = "偏偏喜欢你"
+wrong_answers = Array[String](["想去吃火锅", "今天不上班", "恨你到永远"])
 
-[sub_resource type="Resource" id="Resource_0ijvk"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_ecjre"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 200
@@ -182,9 +210,10 @@ question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？
 chóuxù huī bú qù, kǔmèn sàn bú qù, wèihé wǒ xīn ＿＿＿＿？
 Sorrow can't be shaken off, gloom won't disperse, so why is my heart ＿＿＿＿?"
 answer = "一片空虚"
+wrong_answers = Array[String](["一片光明", "十分欢喜", "无忧无虑"])
 
-[sub_resource type="Resource" id="Resource_yjedc"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_wwtwe"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 300
@@ -192,9 +221,10 @@ question = "情义似水滔滔 ＿＿＿
 qíngyì sì shuǐ tāotāo ＿＿＿
 Bonds of loyalty are like surging water ＿＿＿"
 answer = "斩不断"
+wrong_answers = Array[String](["流不尽", "数不清", "看不见"])
 
-[sub_resource type="Resource" id="Resource_oejri"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_2ddtt"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 400
@@ -202,9 +232,10 @@ question = "付过千般爱在你手上，愿你暗中 ＿＿＿＿
 fùguò qiānbān ài zài nǐ shǒu shàng, yuàn nǐ ànzhōng ＿＿＿＿
 I've placed a thousand loves in your hands; I wish that in secret you would ＿＿＿＿"
 answer = "送它回来"
+wrong_answers = Array[String](["好好珍惜", "收藏起来", "把它带走"])
 
-[sub_resource type="Resource" id="Resource_r1yls"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_pngwd"]
+script = ExtResource("1_cskf0")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 500
@@ -212,407 +243,463 @@ question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿
 wúnài kùn yú jiǎn zhōng zhèng bù tuō, xiǎng huà húdié ＿＿＿＿＿
 Helplessly trapped in a cocoon, unable to break free; I want to become a butterfly and ＿＿＿＿＿"
 answer = "冲开万千结"
+wrong_answers = Array[String](["飞越万重山", "冲出千重网", "解开千千结"])
 
-[sub_resource type="Resource" id="Resource_yuwdd"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_5gcce"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Technology"
 points = 100
 question = "Which company created the iPhone?"
 answer = "Apple"
+wrong_answers = Array[String](["Nokia", "Toyota", "Nintendo"])
 
-[sub_resource type="Resource" id="Resource_ug2t5"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_f3vtb"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Technology"
 points = 200
 question = "Which of the following storage mediums required a laser to \"burn\" data onto it?"
 answer = "Compact Disc"
+wrong_answers = Array[String](["Floppy Disk", "Cassette Tape", "USB Flash Drive"])
 
-[sub_resource type="Resource" id="Resource_wf6ru"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_x8pjd"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Technology"
 points = 300
 question = "What device, popularized by Sony in 1979, let people listen to cassette tapes while walking?"
 answer = "Walkman"
+wrong_answers = Array[String](["Discman", "iPod", "Boombox"])
 
-[sub_resource type="Resource" id="Resource_ny422"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_67mwy"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Technology"
 points = 400
 question = "What does the \"www\" in a web address stand for?"
 answer = "World Wide Web"
+wrong_answers = Array[String](["Wide World Web", "World Wide Wire", "Web Wide World"])
 
-[sub_resource type="Resource" id="Resource_kj1mp"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_vmefm"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Technology"
 points = 500
 question = "What does \"CRT\" stand for in old televisions and monitors?"
 answer = "Cathode Ray Tube"
+wrong_answers = Array[String](["Cathode Ray Terminal", "Colour Raster Tube", "Cathodic Radiation Tube"])
 
-[sub_resource type="Resource" id="Resource_slt7c"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_o44v2"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "At What Age"
 points = 100
 question = "At what age are Singaporeans required to register for their NRIC for the first time?"
 answer = "15 years old"
+wrong_answers = Array[String](["5 years old", "30 years old", "60 years old"])
 
-[sub_resource type="Resource" id="Resource_ebbry"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_1ybg7"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "At What Age"
 points = 200
 question = "At what age can Singaporeans get their class 3/3A driving license?"
 answer = "18 years old"
+wrong_answers = Array[String](["12 years old", "16 years old", "25 years old"])
 
-[sub_resource type="Resource" id="Resource_nvmwx"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_3x6hm"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "At What Age"
 points = 300
 question = "At what age are Singaporeans legally allowed to vote in a General Election?"
 answer = "21 years old"
+wrong_answers = Array[String](["16 years old", "18 years old", "25 years old"])
 
-[sub_resource type="Resource" id="Resource_ecjre"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_fgpea"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "At What Age"
 points = 400
 question = "At what age can an unmarried Singaporean first apply to buy an HDB flat on their own?"
 answer = "35 years old"
+wrong_answers = Array[String](["25 years old", "30 years old", "40 years old"])
 
-[sub_resource type="Resource" id="Resource_wwtwe"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_kaw1b"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "At What Age"
 points = 500
 question = "At what age must a Singaporean be to run for President of Singapore?"
 answer = "45 years old"
+wrong_answers = Array[String](["35 years old", "40 years old", "50 years old"])
 
-[sub_resource type="Resource" id="Resource_2ddtt"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_3hha6"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "MRT Recall"
 points = 100
 question = "Clementi -> Dover -> ?"
 answer = "Buona Vista"
+wrong_answers = Array[String](["Orchard", "Changi Airport", "Jurong East"])
 
-[sub_resource type="Resource" id="Resource_pngwd"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_s6773"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "MRT Recall"
 points = 200
-question = "Which station does not belong: Choa Chu Kang, Yew Tee, Bukit Gombak, Clementi"
+question = "Which of these stations is NOT on the North-South Line: Choa Chu Kang, Yew Tee, Bukit Gombak, Clementi"
 answer = "Clementi"
+wrong_answers = Array[String](["Choa Chu Kang", "Yew Tee", "Bukit Gombak"])
 
-[sub_resource type="Resource" id="Resource_5gcce"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_exdjg"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "MRT Recall"
 points = 300
 question = "Which MRT station is the interchange between the East-West Line and the North-East Line?"
 answer = "Outram Park"
+wrong_answers = Array[String](["Dhoby Ghaut", "Raffles Place", "Tanjong Pagar"])
 
-[sub_resource type="Resource" id="Resource_f3vtb"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_3lwau"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "MRT Recall"
 points = 400
-question = "Which is the longest MRT line in Singapore?"
+question = "By route length, which is the longest MRT line in Singapore?"
 answer = "East-West Line"
+wrong_answers = Array[String](["North-South Line", "Downtown Line", "Circle Line"])
 
-[sub_resource type="Resource" id="Resource_x8pjd"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_yoogh"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "MRT Recall"
 points = 500
 question = "At 43 metres below ground, which is the deepest MRT station in Singapore?"
 answer = "Bencoolen"
+wrong_answers = Array[String](["Bras Basah", "Bugis", "Rochor"])
 
-[sub_resource type="Resource" id="Resource_67mwy"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_jn8rs"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "SG History"
 points = 100
 question = "Which British official established a trading post in Singapore in 1819?"
 answer = "Stamford Raffles"
+wrong_answers = Array[String](["Lee Kuan Yew", "Zheng He", "Winston Churchill"])
 
-[sub_resource type="Resource" id="Resource_vmefm"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_88qsg"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "SG History"
 points = 200
-question = "What did Lee Kuan Yew believe would boost productivity?"
+question = "Which invention did Lee Kuan Yew famously call key to public efficiency in tropical Singapore?"
 answer = "Air conditioning"
+wrong_answers = Array[String](["The ceiling fan", "Fluorescent lighting", "The elevator"])
 
-[sub_resource type="Resource" id="Resource_o44v2"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_3imae"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "SG History"
 points = 300
 question = "What name did the Japanese give Singapore during the Occupation (1942-1945)?"
 answer = "Syonan-to (\"Light of the South\")"
+wrong_answers = Array[String](["Nippon-to (\"Island of Japan\")", "Hikari-machi (\"City of Light\")", "Minami-to (\"Southern Island\")"])
 
-[sub_resource type="Resource" id="Resource_1ybg7"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_v7wl0"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "SG History"
 points = 400
 question = "In what year did Singapore's first MRT line begin operating?"
 answer = "1987"
+wrong_answers = Array[String](["1983", "1985", "1990"])
 
-[sub_resource type="Resource" id="Resource_3x6hm"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_afait"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "SG History"
 points = 500
 question = "Which Sultan of Johor, along with the Temenggong, signed the 1819 agreement with Raffles?"
 answer = "Sultan Hussein Shah"
+wrong_answers = Array[String](["Sultan Abu Bakar", "Sultan Ibrahim", "Sultan Iskandar"])
 
-[sub_resource type="Resource" id="Resource_fgpea"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_qivpm"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 100
 question = "Que sera, sera, Whatever will be, ________ ________"
 answer = "will be"
+wrong_answers = Array[String](["go away", "be sad", "run fast"])
 
-[sub_resource type="Resource" id="Resource_kaw1b"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_a5f5v"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 200
 question = "Que sera, sera, Whatever will be, will be, The future's not ours ________ ________"
 answer = "to see"
+wrong_answers = Array[String](["to hear", "to know", "to read"])
 
-[sub_resource type="Resource" id="Resource_3hha6"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_rbsve"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 300
 question = "The young ones, Darling, we're the young ones, And young ones shouldn't ________ ________"
 answer = "be afraid"
+wrong_answers = Array[String](["be alone", "be ashamed", "be so sad"])
 
-[sub_resource type="Resource" id="Resource_s6773"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_7jofc"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 400
 question = "To live, love, while the flame is strong, 'Cause we may not be the young ones ________ ________"
 answer = "very long"
+wrong_answers = Array[String](["too long", "stay long", "last long"])
 
-[sub_resource type="Resource" id="Resource_exdjg"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_3aece"]
+script = ExtResource("1_cskf0")
 game = "Game 2"
 topic = "Finish The Lyric"
 points = 500
 question = "Because in Singapore, Singapore, You'll find happiness ________ ________"
 answer = "for everyone"
+wrong_answers = Array[String](["every day", "for always", "for you"])
 
-[sub_resource type="Resource" id="Resource_3lwau"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_iabxq"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Agak-agak"
 points = 100
 question = "How many minutes are in one day?"
 answer = "1,440 minutes"
+wrong_answers = Array[String](["24 minutes", "600 minutes", "14,400 minutes"])
 
-[sub_resource type="Resource" id="Resource_yoogh"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_8vgse"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Agak-agak"
 points = 200
 question = "To the nearest 10 km, how long is Singapore from east to west?"
 answer = "50 km"
+wrong_answers = Array[String](["10 km", "30 km", "80 km"])
 
-[sub_resource type="Resource" id="Resource_jn8rs"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_woopt"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Agak-agak"
 points = 300
-question = "To the nearest 100,000, what is the population of Singapore currently?"
+question = "To the nearest 100,000, what is the total population of Singapore currently?"
 answer = "6,200,000 people"
+wrong_answers = Array[String](["2,200,000 people", "4,800,000 people", "9,200,000 people"])
 
-[sub_resource type="Resource" id="Resource_88qsg"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_iphws"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Agak-agak"
 points = 400
 question = "To the nearest 1,000, what is the circumference of the earth in kilometers?"
 answer = "40,000 km"
+wrong_answers = Array[String](["12,000 km", "20,000 km", "80,000 km"])
 
-[sub_resource type="Resource" id="Resource_3imae"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_njrcs"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Agak-agak"
 points = 500
 question = "To the nearest 100,000 km, what is the average distance from the Earth to the Moon?"
 answer = "400,000 km"
+wrong_answers = Array[String](["40,000 km", "150,000 km", "1,000,000 km"])
 
-[sub_resource type="Resource" id="Resource_v7wl0"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_e5dvm"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Abbreviations"
 points = 100
 question = "What does \"MRT\" stand for?"
 answer = "Mass Rapid Transit"
+wrong_answers = Array[String](["Metro Rail Transit", "Main Rail Track", "Mega Rapid Train"])
 
-[sub_resource type="Resource" id="Resource_afait"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_a8yjb"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Abbreviations"
 points = 200
 question = "What does \"HDB\" stand for?"
 answer = "Housing & Development Board"
+wrong_answers = Array[String](["Home Development Board", "Housing & Estate Board", "Housing Development Bureau"])
 
-[sub_resource type="Resource" id="Resource_qivpm"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_c0v53"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Abbreviations"
 points = 300
 question = "What does \"ERP\" stand for?"
 answer = "Electronic Road Pricing"
+wrong_answers = Array[String](["Electronic Road Payment", "Electronic Road Permit", "Electric Route Pricing"])
 
-[sub_resource type="Resource" id="Resource_a5f5v"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_5kn0v"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Abbreviations"
 points = 400
 question = "What does \"NTUC\" stand for?"
 answer = "National Trades Union Congress"
+wrong_answers = Array[String](["National Trade Union Council", "National Teachers' Union Congress", "National Transport Union Congress"])
 
-[sub_resource type="Resource" id="Resource_rbsve"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_flym7"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Abbreviations"
 points = 500
 question = "What does \"NETS\" stand for?"
 answer = "Network for Electronic Transfers"
+wrong_answers = Array[String](["Network for Electronic Transactions", "National Electronic Transfers Service", "Network of Electronic Terminals"])
 
-[sub_resource type="Resource" id="Resource_7jofc"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_nvvbc"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Singaguessr"
 points = 100
 answer = "Changi Airport"
+wrong_answers = Array[String](["Sentosa", "Marina Bay Sands", "Gardens by the Bay"])
+image = ExtResource("3_ceycr")
 
-[sub_resource type="Resource" id="Resource_3aece"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_8f2s5"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Singaguessr"
 points = 200
 answer = "West Coast Plaza"
+wrong_answers = Array[String](["Jurong Point", "Tampines Mall", "VivoCity"])
+image = ExtResource("4_3ysqi")
 
-[sub_resource type="Resource" id="Resource_iabxq"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_p46sc"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Singaguessr"
 points = 300
 answer = "Plaza Singapura"
+wrong_answers = Array[String](["Orchard Central", "Funan", "Bugis Junction"])
+image = ExtResource("5_o7wmi")
 
-[sub_resource type="Resource" id="Resource_8vgse"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_eivbo"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Singaguessr"
 points = 400
 answer = "Chinatown Point"
+wrong_answers = Array[String](["People's Park Complex", "Chinatown Complex", "Clarke Quay Central"])
+image = ExtResource("6_io5pn")
 
-[sub_resource type="Resource" id="Resource_woopt"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_wtu44"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Singaguessr"
 points = 500
 answer = "Bencoolen MRT"
+wrong_answers = Array[String](["Bugis MRT", "Bras Basah MRT", "Rochor MRT"])
+image = ExtResource("7_ql4fa")
 
-[sub_resource type="Resource" id="Resource_iphws"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_y76dw"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "SG Dishes"
 points = 100
 question = "What dish features poached chicken served with fragrant rice and chilli sauce?"
 answer = "Hainanese chicken rice"
+wrong_answers = Array[String](["Nasi lemak", "Bak kut teh", "Satay"])
 
-[sub_resource type="Resource" id="Resource_njrcs"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_uassg"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "SG Dishes"
 points = 200
 question = "Which crispy flatbread is served with curry for dipping?"
 answer = "Roti prata"
+wrong_answers = Array[String](["Popiah", "Kaya toast", "Chapati"])
 
-[sub_resource type="Resource" id="Resource_e5dvm"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_oy3qa"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "SG Dishes"
 points = 300
 question = "Which crab dish is served in a sweet, spicy tomato-chilli sauce?"
 answer = "Chilli crab"
+wrong_answers = Array[String](["Black pepper crab", "Salted egg crab", "White pepper crab"])
 
-[sub_resource type="Resource" id="Resource_a8yjb"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_d2dli"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "SG Dishes"
 points = 400
 question = "What is the name of the spicy coconut milk noodle soup that often has prawns and cockles?"
 answer = "Laksa"
+wrong_answers = Array[String](["Mee siam", "Prawn mee", "Mee rebus"])
 
-[sub_resource type="Resource" id="Resource_c0v53"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_1bdbs"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "SG Dishes"
 points = 500
 question = "In Mala, which ingredient causes the spicy yet numbing sensation?"
 answer = "Sichuan pepper"
+wrong_answers = Array[String](["Black pepper", "Star anise", "Dried chillies"])
 
-[sub_resource type="Resource" id="Resource_5kn0v"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_1yu27"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 100
 question = "Pulang, marilah pulang, Marilah pulang ________
 Return, come let us return, come let us return ________"
 answer = "bersama-sama"
+wrong_answers = Array[String](["sekarang", "cepat-cepat", "besok pagi"])
 
-[sub_resource type="Resource" id="Resource_flym7"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_81ne7"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 200
 question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________
 (\"Chan Mali Chan\" is a refrain with no literal meaning) ________ ________"
 answer = "ketipung payung"
+wrong_answers = Array[String](["makan nasi", "pergi pasar", "baju biru"])
 
-[sub_resource type="Resource" id="Resource_nvvbc"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_2ubqk"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 300
 question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!
 Oh, a feeling of love! Oh, a feeling of love! Oh, look at ________ ________, a feeling of love!"
 answer = "nona jauh"
+wrong_answers = Array[String](["nona manis", "dari jauh", "anak muda"])
 
-[sub_resource type="Resource" id="Resource_8f2s5"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_424fq"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 400
 question = "Di Tanjung Katong, airnya biru, Di situ tempatnya, ________ ________
 At Tanjong Katong the water is blue; that is the place of ________ ________"
 answer = "dara jelita"
+wrong_answers = Array[String](["dara manis", "puteri raja", "gadis cantik"])
 
-[sub_resource type="Resource" id="Resource_p46sc"]
-script = ExtResource("1_4xh8m")
+[sub_resource type="Resource" id="Resource_h7yax"]
+script = ExtResource("1_cskf0")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 500
 question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________
 The soul's tremor sweeps over my heart; notes arranged, the rhythm ________ ________"
 answer = "dan lagu"
+wrong_answers = Array[String](["dan syair", "dan nada", "dan merdu"])
 
 [resource]
-script = ExtResource("2_gtctc")
-questions = Array[ExtResource("1_4xh8m")]([SubResource("Resource_xxaah"), SubResource("Resource_gu8wy"), SubResource("Resource_61q0c"), SubResource("Resource_kw6ve"), SubResource("Resource_cskf0"), SubResource("Resource_h2hor"), SubResource("Resource_ceycr"), SubResource("Resource_3ysqi"), SubResource("Resource_o7wmi"), SubResource("Resource_io5pn"), SubResource("Resource_ql4fa"), SubResource("Resource_bpbwg"), SubResource("Resource_mdbur"), SubResource("Resource_i05ic"), SubResource("Resource_86o3g"), SubResource("Resource_jloa8"), SubResource("Resource_la1jb"), SubResource("Resource_amh7d"), SubResource("Resource_fvyaa"), SubResource("Resource_nnywy"), SubResource("Resource_gfdaq"), SubResource("Resource_0ijvk"), SubResource("Resource_yjedc"), SubResource("Resource_oejri"), SubResource("Resource_r1yls"), SubResource("Resource_yuwdd"), SubResource("Resource_ug2t5"), SubResource("Resource_wf6ru"), SubResource("Resource_ny422"), SubResource("Resource_kj1mp"), SubResource("Resource_slt7c"), SubResource("Resource_ebbry"), SubResource("Resource_nvmwx"), SubResource("Resource_ecjre"), SubResource("Resource_wwtwe"), SubResource("Resource_2ddtt"), SubResource("Resource_pngwd"), SubResource("Resource_5gcce"), SubResource("Resource_f3vtb"), SubResource("Resource_x8pjd"), SubResource("Resource_67mwy"), SubResource("Resource_vmefm"), SubResource("Resource_o44v2"), SubResource("Resource_1ybg7"), SubResource("Resource_3x6hm"), SubResource("Resource_fgpea"), SubResource("Resource_kaw1b"), SubResource("Resource_3hha6"), SubResource("Resource_s6773"), SubResource("Resource_exdjg"), SubResource("Resource_3lwau"), SubResource("Resource_yoogh"), SubResource("Resource_jn8rs"), SubResource("Resource_88qsg"), SubResource("Resource_3imae"), SubResource("Resource_v7wl0"), SubResource("Resource_afait"), SubResource("Resource_qivpm"), SubResource("Resource_a5f5v"), SubResource("Resource_rbsve"), SubResource("Resource_7jofc"), SubResource("Resource_3aece"), SubResource("Resource_iabxq"), SubResource("Resource_8vgse"), SubResource("Resource_woopt"), SubResource("Resource_iphws"), SubResource("Resource_njrcs"), SubResource("Resource_e5dvm"), SubResource("Resource_a8yjb"), SubResource("Resource_c0v53"), SubResource("Resource_5kn0v"), SubResource("Resource_flym7"), SubResource("Resource_nvvbc"), SubResource("Resource_8f2s5"), SubResource("Resource_p46sc")])
+script = ExtResource("8_bpbwg")
+questions = Array[ExtResource("1_cskf0")]([SubResource("Resource_mdbur"), SubResource("Resource_i05ic"), SubResource("Resource_86o3g"), SubResource("Resource_jloa8"), SubResource("Resource_la1jb"), SubResource("Resource_amh7d"), SubResource("Resource_fvyaa"), SubResource("Resource_nnywy"), SubResource("Resource_gfdaq"), SubResource("Resource_0ijvk"), SubResource("Resource_yjedc"), SubResource("Resource_oejri"), SubResource("Resource_r1yls"), SubResource("Resource_yuwdd"), SubResource("Resource_ug2t5"), SubResource("Resource_wf6ru"), SubResource("Resource_ny422"), SubResource("Resource_kj1mp"), SubResource("Resource_slt7c"), SubResource("Resource_ebbry"), SubResource("Resource_nvmwx"), SubResource("Resource_ecjre"), SubResource("Resource_wwtwe"), SubResource("Resource_2ddtt"), SubResource("Resource_pngwd"), SubResource("Resource_5gcce"), SubResource("Resource_f3vtb"), SubResource("Resource_x8pjd"), SubResource("Resource_67mwy"), SubResource("Resource_vmefm"), SubResource("Resource_o44v2"), SubResource("Resource_1ybg7"), SubResource("Resource_3x6hm"), SubResource("Resource_fgpea"), SubResource("Resource_kaw1b"), SubResource("Resource_3hha6"), SubResource("Resource_s6773"), SubResource("Resource_exdjg"), SubResource("Resource_3lwau"), SubResource("Resource_yoogh"), SubResource("Resource_jn8rs"), SubResource("Resource_88qsg"), SubResource("Resource_3imae"), SubResource("Resource_v7wl0"), SubResource("Resource_afait"), SubResource("Resource_qivpm"), SubResource("Resource_a5f5v"), SubResource("Resource_rbsve"), SubResource("Resource_7jofc"), SubResource("Resource_3aece"), SubResource("Resource_iabxq"), SubResource("Resource_8vgse"), SubResource("Resource_woopt"), SubResource("Resource_iphws"), SubResource("Resource_njrcs"), SubResource("Resource_e5dvm"), SubResource("Resource_a8yjb"), SubResource("Resource_c0v53"), SubResource("Resource_5kn0v"), SubResource("Resource_flym7"), SubResource("Resource_nvvbc"), SubResource("Resource_8f2s5"), SubResource("Resource_p46sc"), SubResource("Resource_eivbo"), SubResource("Resource_wtu44"), SubResource("Resource_y76dw"), SubResource("Resource_uassg"), SubResource("Resource_oy3qa"), SubResource("Resource_d2dli"), SubResource("Resource_1bdbs"), SubResource("Resource_1yu27"), SubResource("Resource_81ne7"), SubResource("Resource_2ubqk"), SubResource("Resource_424fq"), SubResource("Resource_h7yax")])

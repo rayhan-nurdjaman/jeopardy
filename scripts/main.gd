@@ -247,6 +247,19 @@ func _on_answer(chosen: Button, correct: bool, answers: Container, overlay: Cont
 	_play("wrong")
 	_paint(chosen, BlueSkin.RED)
 	chosen.set_meta("tried", true)
+	var wrong_picks := 0
+	for b in answers.get_children():
+		if b.has_meta("tried"):
+			wrong_picks += 1
+	# Every team has missed (or only the right answer is left): end the question.
+	if wrong_picks >= mini(team_count, 3):
+		_stop_suspense()
+		for b in answers.get_children():
+			b.disabled = true
+			if b.get_meta("correct"):
+				_paint(b, BlueSkin.GREEN)
+		_finish(overlay)
+		return
 	_next_team()
 	for b in answers.get_children():
 		b.disabled = b.has_meta("tried")
@@ -328,8 +341,11 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 	text.add_theme_font_size_override("font_size", 34)
 	box.add_child(text)
 
-	var choices: Array[String] = ["", "", "", ""]
-	choices[randi() % 4] = q.answer
+	var choices: Array[String] = [q.answer]
+	choices.append_array(q.wrong_answers)
+	while choices.size() < 4:
+		choices.append("")
+	choices.shuffle()
 	var answers := GridContainer.new()
 	answers.columns = 2
 	answers.add_theme_constant_override("h_separation", 8)
