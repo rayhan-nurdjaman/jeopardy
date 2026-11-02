@@ -8,6 +8,8 @@ const INTRO_FADE_SECONDS := 0.4
 const ANSWER_STAGGER_SECONDS := 0.3
 const READING_WPM := 150.0
 const ANSWER_PAUSE_SECONDS := 1.5
+const DRUMROLL_SKIP_SECONDS := 2.1 # silent lead-in of drumroll.mp3
+const WHOOSH_SKIP_SECONDS := 1.05 # silent lead-in of whoosh.mp3
 
 var bank: QuestionBank
 var game := ""
@@ -18,12 +20,20 @@ var points: Array[int] = []
 var game_questions: Array[Question] = []
 var team_buttons: Array[Button] = []
 var active_team := 0
+var question_start_team := 0
+var team_names: Array[String] = ["", "", "", "", "", "", "", ""]
+var suspense: AudioStreamPlayer
 
 func _ready() -> void:
 	bank = load(BANK_PATH)
 	theme = BlueSkin.build()
 	RenderingServer.set_default_clear_color(BlueSkin.BG)
 	_show_start()
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F11:
+		var full := DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if full else DisplayServer.WINDOW_MODE_FULLSCREEN)
 
 func _start_game() -> void:
 	_load_questions()
@@ -41,7 +51,39 @@ func _load_questions() -> void:
 
 func _clear() -> void:
 	for c in get_children():
+		if c is AudioStreamPlayer:
+			continue
 		c.queue_free()
+
+func _play(sound: String, from := 0.0) -> AudioStreamPlayer:
+	var p := AudioStreamPlayer.new()
+	p.stream = load("res://audio/%s.mp3" % sound)
+	add_child(p)
+	p.finished.connect(p.queue_free)
+	p.play(from)
+	return p
+
+func _stop_suspense() -> void:
+	if is_instance_valid(suspense):
+		suspense.queue_free()
+
+func _team_name(i: int) -> String:
+	var n := team_names[i].strip_edges()
+	return n if n != "" else "Team %d" % (i + 1)
+
+func _fill_name_fields(box: Container) -> void:
+	for c in box.get_children():
+		box.remove_child(c)
+		c.queue_free()
+	for i in team_count:
+		var e := LineEdit.new()
+		e.placeholder_text = "Team %d" % (i + 1)
+		e.text = team_names[i]
+		e.alignment = HORIZONTAL_ALIGNMENT_CENTER
+		e.custom_minimum_size = Vector2(260, 0)
+		e.add_theme_font_size_override("font_size", 22)
+		e.text_changed.connect(func(t: String) -> void: team_names[i] = t)
+		box.add_child(e)
 
 func _show_start() -> void:
 	_clear()
@@ -89,13 +131,23 @@ func _show_start() -> void:
 	label.add_theme_font_size_override("font_size", 32)
 	row.add_child(label)
 
+	var name_box := GridContainer.new()
+	name_box.columns = 2
+	name_box.add_theme_constant_override("h_separation", 8)
+	name_box.add_theme_constant_override("v_separation", 8)
 	var spin := SpinBox.new()
 	spin.min_value = 1
 	spin.max_value = 8
 	spin.value = team_count
 	spin.get_line_edit().add_theme_font_size_override("font_size", 32)
-	spin.value_changed.connect(func(v: float) -> void: team_count = int(v))
+	spin.value_changed.connect(func(v: float) -> void:
+		team_count = int(v)
+		_fill_name_fields(name_box))
 	row.add_child(spin)
+	_fill_name_fields(name_box)
+	var name_center := CenterContainer.new()
+	name_center.add_child(name_box)
+	box.add_child(name_center)
 
 	var start := Button.new()
 	start.text = "Start"
@@ -127,6 +179,7 @@ func _show_grid() -> void:
 	var scoreboard := HBoxContainer.new()
 	scoreboard.add_theme_constant_override("separation", 12)
 	page.add_child(scoreboard)
+	scoreboard.z_index = 1 # stays above question overlays so teams can be switched
 	var group := ButtonGroup.new()
 	group.allow_unpress = true
 	team_buttons.clear()
@@ -172,46 +225,59 @@ func _show_grid() -> void:
 			grid.add_child(b)
 
 func _play_drumroll() -> void:
-	# Placeholder: replace with real audio and await its finished signal.
-	await get_tree().create_timer(2.0).timeout
+	await _play("drumroll", DRUMROLL_SKIP_SECONDS).finished
 
 func _team_text(i: int) -> String:
-	return "Team %d\n%d" % [i + 1, scores[i]]
+	return "%s\n%d" % [_team_name(i), scores[i]]
 
-func _on_answer(chosen: Button, correct: bool, answers: Container, overlay: Control, p: int, timer_tween: Tween) -> void:
-	timer_tween.kill()
+func _on_answer(chosen: Button, correct: bool, answers: Container, overlay: Control, p: int, timer_tween: Tween, bar: ProgressBar) -> void:
+	timer_tween.pause()
+	_stop_suspense()
 	for b in answers.get_children():
 		b.disabled = true
 	await _play_drumroll()
-	_resolve(chosen, correct, answers, overlay, p)
-
-func _on_timeout(answers: Container, overlay: Control, p: int) -> void:
-	for b in answers.get_children():
-		b.disabled = true
-	_resolve(null, false, answers, overlay, p)
-
-func _paint(b: Button, color: Color) -> void:
-	b.add_theme_stylebox_override("disabled", BlueSkin.flat(color))
-	b.add_theme_color_override("font_disabled_color", Color.WHITE)
-
-func _resolve(chosen: Button, correct: bool, answers: Container, overlay: Control, p: int) -> void:
-	if chosen != null:
-		_paint(chosen, BlueSkin.GREEN if correct else BlueSkin.RED)
-	if not correct:
-		for b in answers.get_children():
-			if b.get_meta("correct"):
-				_paint(b, BlueSkin.GREEN)
-	else:
+	if correct:
+		_play("correct")
+		_paint(chosen, BlueSkin.GREEN)
 		scores[active_team] += p
 		team_buttons[active_team].text = _team_text(active_team)
+		_finish(overlay)
+		return
+	# Wrong: show only the wrong pick; the question stays open so another team can steal.
+	_play("wrong")
+	_paint(chosen, BlueSkin.RED)
+	chosen.set_meta("tried", true)
+	_next_team()
+	for b in answers.get_children():
+		b.disabled = b.has_meta("tried")
+	bar.value = QUESTION_SECONDS
+	timer_tween.stop()
+	timer_tween.play()
+	suspense = _play("suspense")
+
+func _on_timeout(answers: Container, overlay: Control) -> void:
+	_stop_suspense()
+	_play("wrong")
+	for b in answers.get_children():
+		b.disabled = true
+	_finish(overlay)
+
+func _paint(b: Button, color: Color) -> void:
+	b.add_theme_stylebox_override("disabled", BlueSkin.flat(color, Color.WHITE, BlueSkin.ANSWER_PAD))
+	b.add_theme_color_override("font_disabled_color", Color.WHITE)
+
+func _next_team() -> void:
 	active_team = (active_team + 1) % team_count
 	team_buttons[active_team].button_pressed = true
 
+func _finish(overlay: Control) -> void:
 	await get_tree().create_timer(REVEAL_SECONDS).timeout
 	var tween := create_tween()
 	tween.tween_property(overlay, "modulate:a", 0.0, FADE_SECONDS)
 	await tween.finished
 	overlay.queue_free()
+	active_team = (question_start_team + 1) % team_count
+	team_buttons[active_team].button_pressed = true
 
 func _show_question(topic: String, p: int, button: Button) -> void:
 	var q: Question
@@ -221,17 +287,24 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 	if q == null:
 		return
 	button.disabled = true
+	question_start_team = active_team
+	_play("whoosh", WHOOSH_SKIP_SECONDS)
 
 	var overlay := ColorRect.new()
 	overlay.color = Color(0, 0, 0, 0.6)
 	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(overlay)
+	# Keep the panel clear of the timer bar (top) and the scoreboard (bottom).
+	var safe := MarginContainer.new()
+	safe.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	safe.add_theme_constant_override("margin_top", 40)
+	safe.add_theme_constant_override("margin_bottom", 130)
+	overlay.add_child(safe)
+	var center := CenterContainer.new()
+	safe.add_child(center)
 	var panel := PanelContainer.new()
-	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	panel.grow_horizontal = Control.GROW_DIRECTION_BOTH
-	panel.grow_vertical = Control.GROW_DIRECTION_BOTH
-	panel.custom_minimum_size = Vector2(700, 0)
-	overlay.add_child(panel)
+	panel.custom_minimum_size = Vector2(1000, 0)
+	center.add_child(panel)
 	var pad := MarginContainer.new()
 	for side in ["left", "right", "top", "bottom"]:
 		pad.add_theme_constant_override("margin_" + side, 24)
@@ -245,14 +318,14 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 		pic.texture = q.image
 		pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		pic.custom_minimum_size = Vector2(0, 300)
+		pic.custom_minimum_size = Vector2(0, 360)
 		box.add_child(pic)
 
 	var text := Label.new()
 	text.text = q.question
 	text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	text.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	text.add_theme_font_size_override("font_size", 32)
+	text.add_theme_font_size_override("font_size", 34)
 	box.add_child(text)
 
 	var choices: Array[String] = ["", "", "", ""]
@@ -262,13 +335,25 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 	answers.add_theme_constant_override("h_separation", 8)
 	answers.add_theme_constant_override("v_separation", 8)
 	box.add_child(answers)
-	for c in choices:
+	for i in choices.size():
+		var c := choices[i]
 		var ab := Button.new()
+		ab.theme_type_variation = "AnswerButton"
+		ab.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		ab.text = c
+		var letter := Label.new()
+		letter.text = char(65 + i)
+		letter.add_theme_font_size_override("font_size", 32)
+		letter.add_theme_color_override("font_color", BlueSkin.GOLD)
+		letter.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		letter.set_anchors_and_offsets_preset(Control.PRESET_LEFT_WIDE)
+		letter.offset_left = 20
+		letter.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		ab.add_child(letter)
 		ab.set_meta("correct", c == q.answer)
 		ab.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		ab.custom_minimum_size = Vector2(0, 60)
-		ab.add_theme_font_size_override("font_size", 24)
+		ab.custom_minimum_size = Vector2(0, 90)
+		ab.add_theme_font_size_override("font_size", 32)
 		answers.add_child(ab)
 
 	var bar := ProgressBar.new()
@@ -280,10 +365,10 @@ func _show_question(topic: String, p: int, button: Button) -> void:
 	overlay.add_child(bar)
 	var timer_tween := create_tween()
 	timer_tween.tween_property(bar, "value", 0.0, QUESTION_SECONDS)
-	timer_tween.finished.connect(_on_timeout.bind(answers, overlay, p))
+	timer_tween.finished.connect(_on_timeout.bind(answers, overlay))
 	timer_tween.pause()
 	for ab in answers.get_children():
-		ab.pressed.connect(_on_answer.bind(ab, ab.get_meta("correct"), answers, overlay, p, timer_tween))
+		ab.pressed.connect(_on_answer.bind(ab, ab.get_meta("correct"), answers, overlay, p, timer_tween, bar))
 		ab.disabled = true
 		ab.modulate.a = 0.0
 
@@ -317,4 +402,5 @@ func _intro(overlay: Control, question_text: String, question_parts: Array[Contr
 	for ab in answers.get_children():
 		ab.disabled = false
 	timer_tween.play()
+	suspense = _play("suspense")
 

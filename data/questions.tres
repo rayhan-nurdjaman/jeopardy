@@ -168,7 +168,9 @@ script = ExtResource("1_4xh8m")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 100
-question = "明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？"
+question = "明白到爱失去，一切都不对，我又为何 ＿＿＿＿＿？
+míngbái dào ài shīqù, yīqiè dōu bú duì, wǒ yòu wèihé ＿＿＿＿＿？
+I understand that love is lost and everything is wrong, so why do I ＿＿＿＿＿?"
 answer = "偏偏喜欢你"
 
 [sub_resource type="Resource" id="Resource_0ijvk"]
@@ -176,7 +178,9 @@ script = ExtResource("1_4xh8m")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 200
-question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？"
+question = "愁绪挥不去，苦闷散不去，为何我心 ＿＿＿＿？
+chóuxù huī bú qù, kǔmèn sàn bú qù, wèihé wǒ xīn ＿＿＿＿？
+Sorrow can't be shaken off, gloom won't disperse, so why is my heart ＿＿＿＿?"
 answer = "一片空虚"
 
 [sub_resource type="Resource" id="Resource_yjedc"]
@@ -184,7 +188,9 @@ script = ExtResource("1_4xh8m")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 300
-question = "情义似水滔滔 ＿＿＿"
+question = "情义似水滔滔 ＿＿＿
+qíngyì sì shuǐ tāotāo ＿＿＿
+Bonds of loyalty are like surging water ＿＿＿"
 answer = "斩不断"
 
 [sub_resource type="Resource" id="Resource_oejri"]
@@ -192,7 +198,9 @@ script = ExtResource("1_4xh8m")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 400
-question = "付过千般爱在你手上，愿你暗中 ＿＿＿＿"
+question = "付过千般爱在你手上，愿你暗中 ＿＿＿＿
+fùguò qiānbān ài zài nǐ shǒu shàng, yuàn nǐ ànzhōng ＿＿＿＿
+I've placed a thousand loves in your hands; I wish that in secret you would ＿＿＿＿"
 answer = "送它回来"
 
 [sub_resource type="Resource" id="Resource_r1yls"]
@@ -200,7 +208,9 @@ script = ExtResource("1_4xh8m")
 game = "Game 1"
 topic = "Finish The Lyric"
 points = 500
-question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿"
+question = "无奈困于茧中挣不脱，想化蝴蝶 ＿＿＿＿＿
+wúnài kùn yú jiǎn zhōng zhèng bù tuō, xiǎng huà húdié ＿＿＿＿＿
+Helplessly trapped in a cocoon, unable to break free; I want to become a butterfly and ＿＿＿＿＿"
 answer = "冲开万千结"
 
 [sub_resource type="Resource" id="Resource_yuwdd"]
@@ -563,7 +573,8 @@ script = ExtResource("1_4xh8m")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 100
-question = "Pulang, marilah pulang, Marilah pulang ________"
+question = "Pulang, marilah pulang, Marilah pulang ________
+Return, come let us return, come let us return ________"
 answer = "bersama-sama"
 
 [sub_resource type="Resource" id="Resource_flym7"]
@@ -571,7 +582,8 @@ script = ExtResource("1_4xh8m")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 200
-question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________"
+question = "Chan mali chan, chan mali chan, Chan mali chan, ________ ________
+(\"Chan Mali Chan\" is a refrain with no literal meaning) ________ ________"
 answer = "ketipung payung"
 
 [sub_resource type="Resource" id="Resource_nvvbc"]
@@ -579,7 +591,8 @@ script = ExtResource("1_4xh8m")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 300
-question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!"
+question = "Rasa sayang, eh! Rasa sayang sayang, eh! Eh lihat ________ ________, rasa sayang sayang, eh!
+Oh, a feeling of love! Oh, a feeling of love! Oh, look at ________ ________, a feeling of love!"
 answer = "nona jauh"
 
 [sub_resource type="Resource" id="Resource_8f2s5"]
@@ -587,7 +600,8 @@ script = ExtResource("1_4xh8m")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 400
-question = "Di Tanjung Katong, airnya biru, Di situ tempatnya, ________ ________"
+question = "Di Tanjung Katong, airnya biru, Di situ tempatnya, ________ ________
+At Tanjong Katong the water is blue; that is the place of ________ ________"
 answer = "dara jelita"
 
 [sub_resource type="Resource" id="Resource_p46sc"]
@@ -595,7 +609,8 @@ script = ExtResource("1_4xh8m")
 game = "Game 3"
 topic = "Finish The Lyric"
 points = 500
-question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________"
+question = "Getaran jiwa, melanda hatiku, Tersusun nada, irama ________ ________
+The soul's tremor sweeps over my heart; notes arranged, the rhythm ________ ________"
 answer = "dan lagu"
 
 [resource]

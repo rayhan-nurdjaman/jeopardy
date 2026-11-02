@@ -8,14 +8,16 @@ const GOLD := Color("9fb8e8")
 const GREEN := Color("3d8f5f")
 const RED := Color("a14a4a")
 
-static func flat(fill: Color, border: Color = Color.WHITE) -> StyleBoxFlat:
+const ANSWER_PAD := 64
+
+static func flat(fill: Color, border: Color = Color.WHITE, h_pad := 16) -> StyleBoxFlat:
 	var s := StyleBoxFlat.new()
 	s.bg_color = fill
 	s.border_color = border
 	s.set_border_width_all(3)
 	s.set_corner_radius_all(10)
-	s.content_margin_left = 16
-	s.content_margin_right = 16
+	s.content_margin_left = h_pad
+	s.content_margin_right = h_pad
 	s.content_margin_top = 8
 	s.content_margin_bottom = 8
 	return s
@@ -36,6 +38,14 @@ static func build() -> Theme:
 	t.set_color("font_disabled_color", "Button", Color("7f8bb5"))
 
 	t.set_color("font_color", "Label", Color.WHITE)
+
+	# Answer buttons reserve side room for the A/B/C/D letter.
+	t.set_type_variation("AnswerButton", "Button")
+	t.set_stylebox("normal", "AnswerButton", flat(BLUE, Color.WHITE, ANSWER_PAD))
+	t.set_stylebox("hover", "AnswerButton", flat(BLUE_LIGHT, GOLD, ANSWER_PAD))
+	t.set_stylebox("pressed", "AnswerButton", flat(GOLD, Color.WHITE, ANSWER_PAD))
+	t.set_stylebox("hover_pressed", "AnswerButton", flat(GOLD, Color.WHITE, ANSWER_PAD))
+	t.set_stylebox("disabled", "AnswerButton", flat(BLUE_DARK, Color("34437a"), ANSWER_PAD))
 
 	var panel := flat(BLUE_DARK, GOLD)
 	panel.set_border_width_all(4)
